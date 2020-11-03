@@ -1,0 +1,45 @@
+*, html {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: 500;
+	font-family: 'Ronduit Capitals', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.text, p {
+	font-weight: 300;
+	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	color: rgb(245,245,245);
+}
+
+nav .dropdown i {
+	color: rgba(255,255,255,.5);
+}
+
+nav .dropdown-toggle::after {
+	content: none!important;
+}
+
+.home video.bgc {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
+}
+
+.home .hero {
+	display: inline-block;
+	position: relative;
+	margin-top: 20vh;
+	margin-left: 80vh;
+}
+
+.home .hero h1 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
