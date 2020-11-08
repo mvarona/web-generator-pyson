@@ -64,7 +64,7 @@ section {
 	height: 100%;
 }
 
-section#menu {
+section {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	background-color: #000405;
@@ -155,6 +155,45 @@ nav.section-title div.section-quote-wrapper h4.author {
 nav.section-title img {
 	width: 100%;
 	height: 100%;
+}
+
+section#subsection div.subsection-heading {
+	margin-top: 3rem;
+}
+
+section#subsection div.subsection-img-wrapper {
+	background-color: white;
+	border-radius: 16px;
+	padding: 12px;
+	border: solid 1px #ddd;
+	text-align: center;
+	width: 7%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#subsection div.subsection-img-wrapper img {
+	width: 100%;
+	height: 100%;
+}
+
+section#subsection div.subsection-body {
+	margin-top: 4rem;
+	border-radius: 16px;
+	background-color: rgba(0,8,9,.5);
+	padding: 3rem 2rem;
+}
+
+section#subsection div.subsection-body p {
+	font-size: 1.5em;
+}
+
+section#subsection div.subsection-body p {
+	margin-bottom: 1.5rem;
+}
+
+section#subsection div.subsection-body p:last-child {
+	margin-bottom: 0!important;
 }
 
 footer {
