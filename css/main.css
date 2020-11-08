@@ -61,7 +61,7 @@ main {
 
 section {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 }
 
 section {
@@ -194,6 +194,47 @@ section#subsection div.subsection-body p {
 
 section#subsection div.subsection-body p:last-child {
 	margin-bottom: 0!important;
+}
+
+section#subsection div.subsection-links {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+section#subsection div.subsection-links a {
+	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+section#subsection div.subsection-gallery {
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+
+section#subsection div.subsection-gallery div.card img {
+	width: 70%;
+	height: 70%;
+}
+
+section#subsection div#gallery-modal .modal-dialog {
+	min-width: 50%!important;
+	height: 5rem;
+}
+
+section#subsection div#gallery-modal .carousel-caption {
+	background-color: rgba(20,23,25,.6);
+}
+
+section#subsection div#gallery-modal img {
+	width: 100%;
+	height: 100%;
+	padding: 15%;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#subsection div#gallery-modal .carousel-control-prev, section#subsection div#gallery-modal .carousel-control-next {
+	width: 5%;
 }
 
 footer {
