@@ -6,6 +6,11 @@
 	font-family: 'Ronduit Capitals', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 .text, p {
 	font-weight: 300;
 	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -97,7 +102,7 @@ section#menu div.img-wrapper {
 	padding: 16px;
 	border: solid 1px #ddd;
 	text-align: center;
-	width: 75%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -111,6 +116,43 @@ section#menu div.span-wrapper {
 
 section#menu img {
 	display: inline;
+	width: 100%;
+	height: 100%;
+}
+
+nav.section-title {
+	width: 50%;
+	margin: 1rem auto 3rem auto;
+}
+
+nav.section-title div.section-img-wrapper {
+	background-color: white;
+	border-radius: 16px;
+	padding: 8px;
+	border: solid 1px #ddd;
+	text-align: center;
+	width: 8%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav.section-title div.section-quote-wrapper {
+	margin-top: 4rem;
+	line-height: 1.2rem;
+	width: 100%;
+}
+
+nav.section-title div.section-quote-wrapper h3.quote {
+	font-style: italic;
+	color: rgba(200,200,200,.9);
+}
+
+nav.section-title div.section-quote-wrapper h4.author {
+	margin-top: 2rem;
+	color: rgba(200,200,200,.9);
+}
+
+nav.section-title img {
 	width: 100%;
 	height: 100%;
 }
