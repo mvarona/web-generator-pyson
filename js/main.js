@@ -20,3 +20,7 @@ function renderGeneralSettings(){
 	printCurrentYear();
 	setUpScrollEffect();
 }
+
+function loadGalleryItem(index){
+	$('.carousel').carousel(index);
+}

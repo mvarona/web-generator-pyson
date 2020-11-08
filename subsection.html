@@ -60,7 +60,7 @@
 			<a class="navbar-brand" href="#">$company</a>
 		</div>
 
-	  	<div class="collapse navbar-collapse col-1 float-right">
+		<div class="collapse navbar-collapse col-1 float-right">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
 					<a class="nav-link" href="#">EN</a>
@@ -72,10 +72,10 @@
 					<a class="nav-link" href="#">DE</a>
 				</li>
 			</ul>
-	  	</div>
+		</div>
 
-	  	<div class="collapse navbar-collapse col-1 float-right">
-	  		<ul class="navbar-nav mr-auto">
+		<div class="collapse navbar-collapse col-1 float-right">
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSubsections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bars"></i>
@@ -84,8 +84,8 @@
 					  <a class="dropdown-item" href="#">$Subsection</a>
 					</div>
 				</li>
-	  		</ul>
-	  	</div>
+			</ul>
+		</div>
 	</nav>
 
 	<section id="subsection">
@@ -98,12 +98,61 @@
 		</div>
 
 		<div class="subsection-body w-75 text-justify ml-auto mr-auto">
-			<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus magnis, augue nunc ante luctus curabitur magna varius tempor est, orci facilisis habitant erat nam bibendum elementum lobortis. Ullamcorper ornare suspendisse a inceptos himenaeos viverra lacus sociis quis, etiam et elementum sem volutpat cum faucibus in tempor scelerisque, donec imperdiet feugiat sapien nam per nisi dapibus. Quisque arcu sed parturient at molestie feugiat, velit lacus gravida etiam venenatis.</p>
-			<p>Parturient montes placerat porttitor vulputate volutpat nullam molestie pharetra euismod, rhoncus venenatis urna natoque mollis congue malesuada dui odio, nec lacus dictumst condimentum velit dapibus vehicula mattis. Dictum erat ultricies ante hendrerit velit ornare aenean metus risus ridiculus cum, tortor justo fermentum nisl maecenas sapien nam cras nascetur. Luctus condimentum purus imperdiet aenean molestie ac lectus, est phasellus parturient suspendisse sapien per vivamus, vitae nisi sagittis lacus sociis quisque.</p>
+			<p>$subsectionBody</p>
 		</div>
 		
-		
-		
+		<div class="subsection-links w-100 ml-auto mr-auto text-center">
+			<a class="btn btn-outline-light col-2 mr-5" href="$subsectionLink1" target="_blank" role="button">$subsectionLinkText1</a>
+			<a class="btn btn-outline-light col-2 mr-5" href="$subsectionLink2" target="_blank" role="button">$subsectionLinkText2</a>
+			<a class="btn btn-outline-light col-2" href="$subsectionLink3" target="_blank" role="button">$subsectionLinkText3</a>
+		</div>
+
+		<div class="subsection-gallery w-75 ml-auto mr-auto text-center">
+
+			<h1 class="text-left pl-5 ml-3 mb-4">$galleryString</h1>
+			
+			<div class="card col-3 mr-5 mb-5 d-inline-block" onclick="loadGalleryItem($galleryImgIndex)" data-toggle="modal" data-target="#gallery-modal">
+				<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png" alt="$imgAlt">
+			</div>
+		</div>
+
+		<div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="$galleryString" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+				  	<div class="modal-header">
+						<h5 class="modal-title">$galleryString</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="$closeString">
+							<span aria-hidden="true">X</span>
+						</button>
+				  	</div>
+				  	<div class="modal-body">
+						<div id="gallery-carousel-indicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#gallery-carousel-indicators" data-slide-to="$galleryImgIndex" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png" alt="$altGalleryImg">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>$galleryImgTitle</h5>
+										<p>$galleryImgDescription</p>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#gallery-carousel-indicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">$previousString</span>
+							</a>
+							<a class="carousel-control-next" href="#gallery-carousel-indicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">$nextString</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<footer class="page-footer font-small navbar-dark bg-dark text-center p-3">
