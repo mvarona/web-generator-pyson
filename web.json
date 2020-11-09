@@ -1,0 +1,173 @@
+{
+	"lans": ["en", "es", "de"],
+	"company": "MarioVarona",
+	"head_home_en": "Hello",
+	"head_home_es": "Hola",
+	"head_home_de": "Hallo",
+	"intro_home_en": "",
+	"intro_home_es": "Desde siempre me han impresionado las posibilidades que ofrece la tecnología para cambiar y mejorar la vida de las personas.<br/>De forma autodidacta y reglada he ido aprendiendo sobre informática, comunicación, economía, marketing y psicología para lograrlo.<br/>Con el diseño y usabilidad de Apple, la pasión por el software de Google y las lecciones económicas y estratégicas de otros gigantes empresariales en mente, me gustaría construir tecnología que mejore la vida de las personas y las inspire a creer en ellas mismas.",
+	"intro_home_de": "I have always been amazed by the possibilities offered by technology to change and improve people’s lives.<br/>Both self-taught and traditionally, I have learned about computer science, communication, economy, marketing and psychology to achieve it.<br/>With Apple’s UX and design, the Google’s passion for software and economic and strategic lessons from other tech giants in mind, I would like to build technology that enhance people’s lives and inspire them to trust themselves.",
+	"sections": [
+		{
+			"img": "images/books.png",
+			"title_en": "Education",
+			"title_es": "Formación",
+			"title_de": "Ausbildung",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": "",
+			"subsections": [
+				{
+					"img": "images/ruler.png",
+					"title_en": "Baccalaureate",
+					"title_es": "Bachillerato",
+					"title_de": "Bakkalaureat",
+					"body_en": "Average high school scientific baccalaureate grade: 9.29/10.",
+					"body_es": "Nota media en bachillerato científico: 9,29.",
+					"body_de": "-"
+				},
+				{
+					"img": "images/graduate.png",
+					"title_en": "Degree",
+					"title_es": "Grado",
+					"title_de": "-",
+					"body_en": "Computer Science Degree - University of Salamanca<br/>2017 – 2021<br/><br/>Average degree grade: 8.06/10 (as of September 2020).<br/>Member of the ACM USAL chapter since 2018.<br/>Bachelor thesis: Integral system to make on-board payments on public transport with and without NFC, platform to manage it, environment to test it, app to calculate avoided CO2 and platform to notify user (Proposal).",
+					"body_es": "Grado en Ingeniería Informática - Universidad de Salamanca<br/>2017 - 2021<br/><br/>Nota media en grado: 8,06 (a fecha de septiembre de 2020).<br/>Miembro del chapter ACM USAL desde 2018.<br/>TFG: Sistema integral para pago de billetes en el transporte público con y sin NFC, plataforma que lo gestiona, entorno para probar su funcionamiento, app que calcula CO2 evitado y plataforma que notifica al usuario (Propuesta).",
+					"body_de": "-"
+				},
+				{
+					"img": "images/germany.png",
+					"title_en": "Erasmus",
+					"title_es": "Erasmus",
+					"title_de": "-",
+					"body_en": "Informatik, Computer Science - The Julius Maximilians University of Würzburg<br/>2019 - 2020<br/><br/>Study abroad through an Erasmus grant of 1 year long in Würzburg, Bayern, Germany.",
+					"body_es": "Informatik, Computer Science - The Julius Maximilians University of Würzburg<br/>2019 - 2020<br/><br/>Estancia universitaria de 1 año de duración a través de la beca Erasmus en la ciudad de Würzburg, Bayern, Alemania.",
+					"body_de": "-"
+				},
+				{
+					"img": "images/languages.png",
+					"title_en": "Languages",
+					"title_es": "Idiomas",
+					"title_de": "-",
+					"body_en": "Spanish (Mother tongue)<br/>English (C1, OLS, 2019), (B2, Cambridge FCE, 2016)<br/>German (B2, Julius-Maximilians-Universität Würzburg, 2020)",
+					"body_es": "Español (Lengua materna)<br/>Inglés (C1, OLS, 2019), (B2, Cambridge FCE, 2016)<br/>German (B2, Julius-Maximilians-Universität Würzburg, 2020)",
+					"body_de": "-"
+				},
+				{
+					"img": "images/book.png",
+					"title_en": "Courses",
+					"title_es": "Cursos",
+					"title_de": "-",
+					"body_en": "iOS for iPhone y iPad foundations- KeepCoding<br/>Advanced iOS programming - KeepCoding<br/>Swift 3.0 foundations - KeepCoding<br/>Artificial Intelligence Foundations. Machine learning and neural networks - University of Salamanca<br/><br/>Naming strategies: Naming your brand - Crehana<br/>A technological vision for business people - Udemy<br/>Android programming from scratch - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy",
+					"body_es": "Fundamentos iOS para iPhone y iPad - KeepCoding<br/>Programación iOS avanzada - KeepCoding<br/>Fundamentos Swift 3.0 - KeepCoding<br/>Introducción a la Inteligencia Artificial. Aprendizaje automático y redes neuronales - Universidad de Salamanca<br/>Estrategias de Naming: Dándole un nombre a tu marca - Crehana<br/>Una visión tecnológica para gente de negocio - Udemy<br/>Programación Android desde cero - KeepCoding<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy",
+					"body_de": "-"
+				},
+				{
+					"img": "images/plus.png",
+					"title_en": "Others",
+					"title_es": "Otros",
+					"title_de": "-",
+					"body_en": "Western University - 2016<br/>London, Canada - English summer school at Huron College<br/>1 month stay.<br/><br/>Munich University of Applied Sciences - 2020<br/>Computer Networking and Secure Network Management",
+					"body_es": "Western University - 2016<br/>London, Canadá - English summer school at Huron College<br/>Estancia de 1 mes.<br/><br/>Hochschule für angewandte Wissenschaften München 2020<br/>Computer Networking and Secure Network Management",
+					"body_de": "-"
+				}
+			]
+		},
+
+		{
+			"img": "images/briefcase.png",
+			"title_en": "Experience",
+			"title_es": "Experiencia",
+			"title_de": "Erfahrung",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": ""
+		},
+
+		{
+			"img": "images/filebox.png",
+			"title_en": "Projects",
+			"title_es": "Proyectos",
+			"title_de": "Projekte",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": ""
+		},
+
+		{
+			"img": "images/gear.png",
+			"title_en": "Skills",
+			"title_es": "Habilidades",
+			"title_de": "Fähigkeiten",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": "",
+			"body_en": "<div id='chart'></div>",
+			"body_es": "<div id='chart'></div>",
+			"body_de": "-"
+		},
+
+		{
+			"img": "images/chart.png",
+			"title_en": "Transparency",
+			"title_es": "Transparencia",
+			"title_de": "Transparenz",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": "",
+			"body_en": "Numbers",
+			"body_es": "Números",
+			"body_de": "-"
+		},
+
+		{
+			"img": "images/memo.png",
+			"title_en": "Blog",
+			"title_es": "Blog",
+			"title_de": "Blog",
+			"quote_en": "",
+			"quote_es": "",
+			"quote_de": "",
+			"quote_athor_en": "",
+			"quote_athor_es": "",
+			"quote_athor_de": "",
+			"subsections": [
+				{
+					"img": "images/tools.png",
+					"title_en": "Create a static web from json",
+					"title_es": "Crear una web estática desde json",
+					"title_de": "-",
+					"date": "11/09/2020",
+					"body_en": "-",
+					"body_es": "-",
+					"body_de": "-"
+				},
+				{
+					"img": "images/government.png",
+					"title_en": "The future of politics",
+					"title_es": "El futuro de la política",
+					"title_de": "-",
+					"date": "11/10/2020",
+					"body_en": "-",
+					"body_es": "-",
+					"body_de": "-"
+				}
+			]
+		}
+	]
+}
