@@ -4,9 +4,9 @@
 	"head_home_en": "Hello",
 	"head_home_es": "Hola",
 	"head_home_de": "Hallo",
-	"intro_home_en": "",
+	"intro_home_en": "I have always been amazed by the possibilities offered by technology to change and improve people’s lives.<br/>Both self-taught and traditionally, I have learned about computer science, communication, economy, marketing and psychology to achieve it.<br/>With Apple’s UX and design, the Google’s passion for software and economic and strategic lessons from other tech giants in mind, I would like to build technology that enhance people’s lives and inspire them to trust themselves.",
 	"intro_home_es": "Desde siempre me han impresionado las posibilidades que ofrece la tecnología para cambiar y mejorar la vida de las personas.<br/>De forma autodidacta y reglada he ido aprendiendo sobre informática, comunicación, economía, marketing y psicología para lograrlo.<br/>Con el diseño y usabilidad de Apple, la pasión por el software de Google y las lecciones económicas y estratégicas de otros gigantes empresariales en mente, me gustaría construir tecnología que mejore la vida de las personas y las inspire a creer en ellas mismas.",
-	"intro_home_de": "I have always been amazed by the possibilities offered by technology to change and improve people’s lives.<br/>Both self-taught and traditionally, I have learned about computer science, communication, economy, marketing and psychology to achieve it.<br/>With Apple’s UX and design, the Google’s passion for software and economic and strategic lessons from other tech giants in mind, I would like to build technology that enhance people’s lives and inspire them to trust themselves.",
+	"intro_home_de": "-",
 	"sections": [
 		{
 			"img": "images/books.png",
@@ -358,5 +358,23 @@
 				}
 			]
 		}
-	]	
+	],
+	"tos_en": "Terms of Use",
+	"tos_es": "Términos de Uso",
+	"tos_de": "-",
+	"privacy_en": "Privacy Policy",
+	"privacy_es": "Política de Privacidad",
+	"privacy_de": "-",
+	"next_string_en": "Next",
+	"next_string_es": "Siguiente",
+	"next_string_de": "-",
+	"previous_string_en": "Previous",
+	"previous_string_es": "Anterior",
+	"previous_string_de": "-",
+	"gallery_string_en": "Gallery",
+	"gallery_string_es": "Galería",
+	"gallery_string_de": "-",
+	"close_string_en": "Close",
+	"close_string_es": "Cerrar",
+	"close_string_de": "-"
 }
