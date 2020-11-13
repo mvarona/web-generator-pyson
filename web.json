@@ -1,6 +1,6 @@
 {
 	"lans": ["en", "es", "de"],
-	"company": "MarioVarona",
+	"company": "<span class='capital'>M</>ario<span class='capital'>V</>arona",
 	"head_home_en": "Hello",
 	"head_home_es": "Hola",
 	"head_home_de": "Hallo",
