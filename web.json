@@ -10,6 +10,9 @@
 	"sections": [
 		{
 			"img": "images/books.png",
+			"alt_en": "Books icon",
+			"alt_es": "Icono de libros",
+			"alt_de": "-",
 			"title_en": "Education",
 			"title_es": "Formación",
 			"title_de": "Ausbildung",
@@ -79,6 +82,9 @@
 
 		{
 			"img": "images/briefcase.png",
+			"alt_en": "Briefcase icon",
+			"alt_es": "Icono de un maletín",
+			"alt_de": "-",
 			"title_en": "Experience",
 			"title_es": "Experiencia",
 			"title_de": "Erfahrung",
@@ -92,6 +98,9 @@
 
 		{
 			"img": "images/filebox.png",
+			"alt_en": "Filebox icon",
+			"alt_es": "Icono de un archivador con carpetas",
+			"alt_de": "-",
 			"title_en": "Projects",
 			"title_es": "Proyectos",
 			"title_de": "Projekte",
@@ -294,6 +303,9 @@
 
 		{
 			"img": "images/gear.png",
+			"alt_en": "Gear icon",
+			"alt_es": "Icono de un engranaje",
+			"alt_de": "-",
 			"title_en": "Skills",
 			"title_es": "Habilidades",
 			"title_de": "Fähigkeiten",
@@ -310,6 +322,9 @@
 
 		{
 			"img": "images/chart.png",
+			"alt_en": "Chart icon",
+			"alt_es": "Icono de un gráfico",
+			"alt_de": "-",
 			"title_en": "Transparency",
 			"title_es": "Transparencia",
 			"title_de": "Transparenz",
@@ -326,6 +341,9 @@
 
 		{
 			"img": "images/memo.png",
+			"alt_en": "Notebook icon",
+			"alt_es": "Icono de un cuaderno",
+			"alt_de": "-",
 			"title_en": "Blog",
 			"title_es": "Blog",
 			"title_de": "Blog",
