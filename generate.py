@@ -60,6 +60,7 @@ def populate_header(file, json_file, active_lan):
 
 		regex_lans = '{$list_lans}'
 		regex_dropdown_sections = '{$dropdown_sections}'
+		regex_menu_sections = '{$menu_sections}'
 
 		if regex_lans in file_content:
 			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'nav_lan.html'
@@ -81,8 +82,9 @@ def populate_header(file, json_file, active_lan):
 			f.seek(0)
 			f.write(new_file)
 			c.close()
+			file_content = new_file
 
-		if regex_dropdown_sections in new_file:
+		if regex_dropdown_sections in file_content:
 			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'dropdown_section.html'
 			component_new_content = ''
 			for section_json in json_file['sections']:
@@ -100,10 +102,41 @@ def populate_header(file, json_file, active_lan):
 
 					component_new_content = component_new_content + component_content
 
-			new_file = new_file.replace(regex_dropdown_sections, component_new_content)
+			file_content = file_content.replace(regex_dropdown_sections, component_new_content)
 			f.seek(0)
-			f.write(new_file)
+			f.write(file_content)
 			c.close()
+			file_content = file_content
+
+		if regex_menu_sections in file_content:
+			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'menu_section.html'
+			component_new_content = ''
+			for section_json in json_file['sections']:
+				name_section = section_json["title_" + active_lan]
+				img_section = "../" + section_json["img"]
+				alt_img_section = section_json["alt_" + active_lan]
+				with open(component_path, 'r+') as c:
+					component_content = c.read()
+					component_content = component_content.replace('$section', name_section)
+					section_path = make_url_friendly(name_section)
+					component_content = component_content.replace('$path_section', section_path)
+					component_content = component_content.replace('$img_section', img_section)
+					component_content = component_content.replace('$alt_img_section', alt_img_section)
+
+					if name_section in filename:
+						component_content = component_content.replace('$active', 'active')
+					else:
+						component_content = component_content.replace('$active', '')
+
+					component_new_content = component_new_content + component_content
+
+			file_content = file_content.replace(regex_menu_sections, component_new_content)
+			f.seek(0)
+			f.write(file_content)
+			c.close()
+			file_content = new_file
+
+
 	f.close()
 				
 
