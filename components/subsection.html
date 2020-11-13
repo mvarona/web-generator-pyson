@@ -60,98 +60,42 @@
 			<a class="navbar-brand" href="#">$company</a>
 		</div>
 
-		<div class="collapse navbar-collapse col-1 float-right">
+	  	<div class="collapse navbar-collapse col-1 float-right">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">EN</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">ES</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">DE</a>
-				</li>
+				{$lans}
 			</ul>
-		</div>
+	  	</div>
 
-		<div class="collapse navbar-collapse col-1 float-right">
-			<ul class="navbar-nav mr-auto">
+	  	<div class="collapse navbar-collapse col-1 float-right">
+	  		<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSubsections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bars"></i>
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarMenuSubsections">
-					  <a class="dropdown-item" href="#">$section</a>
+					<div class="dropdown-menu" aria-labelledby="navbarMenuSections">
+						{$dropdown_sections}
 					</div>
 				</li>
-			</ul>
-		</div>
+	  		</ul>
+	  	</div>
 	</nav>
 
 	<section id="subsection">
 
 		<div class="subsection-heading ml-auto mr-auto text-center w-100">
 			<div class="col-4 d-inline-block ml-auto mr-auto subsection-img-wrapper">
-				<img alt="$altImgSubsection" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png"/>
+				<img alt="$alt_img_subsection" src="$img_subsection"/>
 			</div>
-			<h1 class="col-5 d-inline-block ml-auto mr-auto">$subsectionTitle</h1>
+			<h1 class="col-5 d-inline-block ml-auto mr-auto">$subsection_title</h1>
 		</div>
 
 		<div class="subsection-body w-75 text-justify ml-auto mr-auto">
-			<p>$subsectionBody</p>
+			<p>$subsection_body</p>
 		</div>
 		
-		<div class="subsection-links w-100 ml-auto mr-auto text-center">
-			<a class="btn btn-outline-light col-2 mr-5" href="$subsectionLink1" target="_blank" role="button">$subsectionLinkText1</a>
-			<a class="btn btn-outline-light col-2 mr-5" href="$subsectionLink2" target="_blank" role="button">$subsectionLinkText2</a>
-			<a class="btn btn-outline-light col-2" href="$subsectionLink3" target="_blank" role="button">$subsectionLinkText3</a>
-		</div>
+		{subsection_links}
 
-		<div class="subsection-gallery w-75 ml-auto mr-auto text-center">
-
-			<h1 class="text-left pl-5 ml-3 mb-4">$galleryString</h1>
-			
-			<div class="card col-3 mr-5 mb-5 d-inline-block" onclick="loadGalleryItem($galleryImgIndex)" data-toggle="modal" data-target="#gallery-modal">
-				<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png" alt="$imgAlt">
-			</div>
-		</div>
-
-		<div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="$galleryString" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content bg-dark">
-				  	<div class="modal-header">
-						<h5 class="modal-title">$galleryString</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="$closeString">
-							<span aria-hidden="true">X</span>
-						</button>
-				  	</div>
-				  	<div class="modal-body">
-						<div id="gallery-carousel-indicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#gallery-carousel-indicators" data-slide-to="$galleryImgIndex" class="active"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1024px-Speaker_Icon.svg.png" alt="$altGalleryImg">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>$galleryImgTitle</h5>
-										<p>$galleryImgDescription</p>
-									</div>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#gallery-carousel-indicators" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">$previousString</span>
-							</a>
-							<a class="carousel-control-next" href="#gallery-carousel-indicators" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">$nextString</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		{subsection_gallery}
 
 	</section>
 
@@ -159,13 +103,13 @@
 		<div id="media" class="mb-2">
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.linkedin.com/in/mariovarona"><i class="fab fa-linkedin"></i></a>
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.github.com/mvarona"><i class="fab fa-github"></i></a>
-			<a target="_blank" class="mr-5 d-inline-block" href="Mario%20Varona%20-%20Curriculum%20Vitae.pdf"><i class="fas fa-file-pdf"></i></a>
+			<a target="_blank" class="mr-5 d-inline-block" href="Mario%20Varona%20-%20Curriculum%20Vitae_$lan.pdf"><i class="fas fa-file-pdf"></i></a>
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.twitter.com/MarioVarona"><i class="fab fa-twitter"></i></a>
 			<a target="_blank" class="d-inline-block" href="mailto:hi@mariovarona.dev"><i class="fas fa-envelope"></i></a>
 		</div>
 		<div>
-			<a class="footer-copyright col-4 text-center p-3" href="privacy">Privacy and Cookies Policy</a>
-			<a class="footer-copyright col-4 text-center p-3" href="tos">Terms of Use</a>
+			<a class="footer-copyright col-4 text-center p-3" href="privacy">$privacy</a>
+			<a class="footer-copyright col-4 text-center p-3" href="tos">$tos</a>
 			<span class="current-year col-4 footer-copyright text-center p-2">© 2020</span>
 		</div>
 	</footer>
