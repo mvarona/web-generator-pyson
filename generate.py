@@ -44,12 +44,22 @@ def populate_independent_vars(file, json_file, lan):
 				f.write(new_file)
 				f.close()
 
+def make_url_friendly(name):
+	url = name.replace("Á", "a").replace("á", "a").replace("ä", "a").replace("Ä", "a")
+	url = name.replace("É", "e").replace("é", "e").replace("ë", "e").replace("Ë", "e")
+	url = name.replace("Í", "i").replace("í", "i").replace("ï", "i").replace("Ï", "i")
+	url = name.replace("Ó", "o").replace("ó", "o").replace("ö", "o").replace("Ö", "o")
+	url = name.replace("Ú", "u").replace("ú", "u").replace("ü", "u").replace("Ü", "u")
+	url = url.lower()
+	return url
+
 def populate_header(file, json_file, active_lan):
 	(filename, ext) = os.path.splitext(file.split(os.path.sep)[-1])
 	with open(file, 'r+') as f:
 		file_content = f.read()
 
 		regex_lans = '{$list_lans}'
+		regex_dropdown_sections = '{$dropdown_sections}'
 
 		if regex_lans in file_content:
 			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'nav_lan.html'
@@ -68,6 +78,29 @@ def populate_header(file, json_file, active_lan):
 					component_new_content = component_new_content + component_content
 
 			new_file = file_content.replace(regex_lans, component_new_content)
+			f.seek(0)
+			f.write(new_file)
+			c.close()
+
+		if regex_dropdown_sections in new_file:
+			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'dropdown_section.html'
+			component_new_content = ''
+			for section_json in json_file['sections']:
+				name_section = section_json["title_" + active_lan]
+				with open(component_path, 'r+') as c:
+					component_content = c.read()
+					component_content = component_content.replace('$section', name_section)
+					section_path = make_url_friendly(name_section)
+					component_content = component_content.replace('$path_section', section_path)
+
+					if name_section in filename:
+						component_content = component_content.replace('$active', 'active')
+					else:
+						component_content = component_content.replace('$active', '')
+
+					component_new_content = component_new_content + component_content
+
+			new_file = new_file.replace(regex_dropdown_sections, component_new_content)
 			f.seek(0)
 			f.write(new_file)
 			c.close()
