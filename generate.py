@@ -37,6 +37,9 @@ def populate_independent_vars(file, json_file, lan):
 			if not isinstance(regex_base_var, list) and regex_base_var in file_content:
 				new_file = file_content.replace(str(regex_base_var), json_file[var])
 				new_file = new_file.replace('$lan', lan)
+				end_pos = new_file.find("</html>")
+				if end_pos != -1:
+					new_file = new_file[:(end_pos+len("</html>"))]
 				f.seek(0)
 				f.write(new_file)
 				f.close()
