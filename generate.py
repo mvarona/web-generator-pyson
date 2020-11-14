@@ -35,13 +35,13 @@ def populate_independent_vars(file, json_file, lan):
 			file_content = f.read()
 
 			if not isinstance(regex_base_var, list) and regex_base_var in file_content:
-				new_file = file_content.replace(str(regex_base_var), json_file[var])
-				new_file = new_file.replace('$lan', lan)
-				end_pos = new_file.find("</html>")
+				file_content = file_content.replace(str(regex_base_var), json_file[var])
+				file_content = file_content.replace('$lan', lan)
+				end_pos = file_content.find("</html>")
 				if end_pos != -1:
-					new_file = new_file[:(end_pos+len("</html>"))]
+					file_content = file_content[:(end_pos+len("</html>"))]
 				f.seek(0)
-				f.write(new_file)
+				f.write(file_content)
 				f.close()
 
 def make_url_friendly(name):
@@ -78,11 +78,10 @@ def populate_header(file, json_file, active_lan):
 
 					component_new_content = component_new_content + component_content
 
-			new_file = file_content.replace(regex_lans, component_new_content)
+			file_content = file_content.replace(regex_lans, component_new_content)
 			f.seek(0)
-			f.write(new_file)
+			f.write(file_content)
 			c.close()
-			file_content = new_file
 
 		if regex_dropdown_sections in file_content:
 			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'dropdown_section.html'
@@ -106,7 +105,6 @@ def populate_header(file, json_file, active_lan):
 			f.seek(0)
 			f.write(file_content)
 			c.close()
-			file_content = file_content
 
 		if regex_menu_sections in file_content:
 			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'menu_section.html'
@@ -134,8 +132,68 @@ def populate_header(file, json_file, active_lan):
 			f.seek(0)
 			f.write(file_content)
 			c.close()
-			file_content = new_file
 
+	f.close()
+
+def populate_section(file, json_file, active_lan, active_section):
+	(filename, ext) = os.path.splitext(file.split(os.path.sep)[-1])
+	with open(file, 'r+') as f:
+		file_content = f.read()
+
+		file_content = file_content.replace('$section', active_section['title_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$alt_img_section', active_section['alt_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$img_section', '../' + active_section['img'])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$quote_section', active_section['quote_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$author_section', active_section['quote_author_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		regex_menu_subsections = '{$menu_subsections}'
+
+		if regex_menu_subsections in file_content:
+			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'menu_section.html'
+			component_new_content = ''
+
+			if 'subsections' in active_section:
+				for subsection_json in active_section['subsections']:
+					name_subsection = subsection_json["title_" + active_lan]
+					img_subsection = "../" + subsection_json["img"]
+					alt_img_subsection = subsection_json["alt_" + active_lan]
+					with open(component_path, 'r+') as c:
+						component_content = c.read()
+						component_content = component_content.replace('$section', name_subsection)
+						subsection_path = make_url_friendly(name_subsection)
+						component_content = component_content.replace('$path_section', subsection_path)
+						component_content = component_content.replace('$img_section', img_subsection)
+						component_content = component_content.replace('$alt_img_section', alt_img_subsection)
+
+						if name_subsection in filename:
+							component_content = component_content.replace('$active', 'active')
+						else:
+							component_content = component_content.replace('$active', '')
+
+						component_new_content = component_new_content + component_content
+
+				file_content = file_content.replace(regex_menu_subsections, component_new_content)
+				f.seek(0)
+				f.write(file_content)
+				c.close()
+			else:
+				file_content = file_content.replace(regex_menu_subsections, "")
+				f.seek(0)
+				f.write(file_content)
 
 	f.close()
 				
@@ -146,6 +204,16 @@ def create_index_for_lans(lans, json_file):
 		shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'index.html', index_path)
 		populate_independent_vars(index_path, json_file, lan)
 		populate_header(index_path, json_file, lan)
+
+def create_sections_for_lans(lans, json_file):
+	for lan in lans:
+		for section in json_file['sections']:
+			section_filename = section['title_' + lan].lower()
+			section_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename + '.html'
+			shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'section.html', section_path)
+			populate_independent_vars(section_path, json_file, lan)
+			populate_header(section_path, json_file, lan)
+			populate_section(section_path, json_file, lan, section)
 		
 
 if __name__=="__main__":
@@ -153,3 +221,4 @@ if __name__=="__main__":
 	lans = json_file["lans"]
 	create_folders_for_lans(lans)
 	create_index_for_lans(lans, json_file)
+	create_sections_for_lans(lans, json_file)
