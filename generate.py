@@ -196,6 +196,29 @@ def populate_section(file, json_file, active_lan, active_section):
 				f.write(file_content)
 
 	f.close()
+
+def populate_subsection(file, json_file, active_lan, active_subsection):
+	(filename, ext) = os.path.splitext(file.split(os.path.sep)[-1])
+	with open(file, 'r+') as f:
+		file_content = f.read()
+
+		file_content = file_content.replace('$subsection_title', active_subsection['title_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$alt_img_subsection', active_subsection['alt_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$img_subsection', '../' + active_subsection['img'])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$subsection_body', active_subsection['body_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+	f.close()
 				
 
 def create_index_for_lans(lans, json_file):
@@ -214,6 +237,18 @@ def create_sections_for_lans(lans, json_file):
 			populate_independent_vars(section_path, json_file, lan)
 			populate_header(section_path, json_file, lan)
 			populate_section(section_path, json_file, lan, section)
+			create_sub_sections_for_lans_and_section(lans, json_file, section)
+
+def create_sub_sections_for_lans_and_section(lans, json_file, section):
+	for lan in lans:
+		if 'subsections' in section:
+			for subsection in section['subsections']:
+				subsection_filename = subsection['title_' + lan].lower()
+				subsection_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + subsection_filename + '.html'
+				shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection.html', subsection_path)
+				populate_independent_vars(subsection_path, json_file, lan)
+				populate_header(subsection_path, json_file, lan)
+				populate_subsection(subsection_path, json_file, lan, subsection)
 		
 
 if __name__=="__main__":
