@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="$lan">
+<head lang="en">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>$meta_subsection_title</title>
@@ -32,7 +32,7 @@
 	<meta name="twitter:description" content="$meta_subsection_description" />
 	<meta name="twitter:image" content="../images/logo.png" />
 
-	<meta property="og:locale" content="$lan" />
+	<meta property="og:locale" content="en" />
 	<meta property="og:url" content="index.html" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="$meta_subsection_title" />
@@ -57,12 +57,18 @@
 <body class="home" onload="renderGeneralSettings()">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="col-10">
-			<a class="navbar-brand" href="#">$company</a>
+			<a class="navbar-brand" href="#"><span class='capital'>M</>ario<span class='capital'>V</>arona</a>
 		</div>
 
 	  	<div class="collapse navbar-collapse col-1 float-right">
 			<ul class="navbar-nav mr-auto">
-				{$list_lans}
+				<li class="nav-item active">
+	<a class="nav-link" href="../en/bms - app for the metropolitan bus of salamanca, bmsalamanca.com">en</a>
+</li><li class="nav-item ">
+	<a class="nav-link" href="../es/bms - app for the metropolitan bus of salamanca, bmsalamanca.com">es</a>
+</li><li class="nav-item ">
+	<a class="nav-link" href="../de/bms - app for the metropolitan bus of salamanca, bmsalamanca.com">de</a>
+</li>
 			</ul>
 	  	</div>
 
@@ -73,7 +79,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bars"></i>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarMenuSections">
-						{$dropdown_sections}
+						<a class="dropdown-item " href="education">Education</a><a class="dropdown-item " href="experience">Experience</a><a class="dropdown-item " href="projects">Projects</a><a class="dropdown-item " href="skills">Skills</a><a class="dropdown-item " href="transparency">Transparency</a><a class="dropdown-item " href="blog">Blog</a>
 					</div>
 				</li>
 	  		</ul>
@@ -84,13 +90,13 @@
 
 		<div class="subsection-heading ml-auto mr-auto text-center w-100">
 			<div class="col-4 d-inline-block ml-auto mr-auto subsection-img-wrapper">
-				<img alt="$alt_img_subsection" src="$img_subsection"/>
+				<img alt="Project logo" src="../images/bms.png"/>
 			</div>
-			<h1 class="col-5 d-inline-block ml-auto mr-auto">$subsection_title</h1>
+			<h1 class="col-5 d-inline-block ml-auto mr-auto">BMS - App for the Metropolitan Bus of Salamanca, bmsalamanca.com</h1>
 		</div>
 
 		<div class="subsection-body w-75 text-justify ml-auto mr-auto">
-			<p>$subsection_body</p>
+			<p>(2015 - ...)<br/>First multi-platform app for the public intercity transport of Salamanca.<br/>It has three components: Android app, iOS app and online platform used by the managing company Autobuses Salmantinos to upload notices about routes and convert them to PDF for its later view by users on the app.<br/>Since 2016 it is supported by Grupo Avanza-ADO as the only official way to access, store and manage notices about routes for its filial company Autobuses Salmantinos.<br/>Since 2018 it is the only way to check the ETAs for each stop. This calculation is provided by an own algorithm which takes into account usual traffic, distance between stops, rush hours or special events, and it is offered through an in-app purchase.</p>
 		</div>
 		
 		{subsection_links}
@@ -103,13 +109,13 @@
 		<div id="media" class="mb-2">
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.linkedin.com/in/mariovarona"><i class="fab fa-linkedin"></i></a>
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.github.com/mvarona"><i class="fab fa-github"></i></a>
-			<a target="_blank" class="mr-5 d-inline-block" href="Mario$20Varona$20-$20Curriculum$20Vitae_$lan.pdf"><i class="fas fa-file-pdf"></i></a>
+			<a target="_blank" class="mr-5 d-inline-block" href="Mario$20Varona$20-$20Curriculum$20Vitae_en.pdf"><i class="fas fa-file-pdf"></i></a>
 			<a target="_blank" class="mr-5 d-inline-block" href="https://www.twitter.com/MarioVarona"><i class="fab fa-twitter"></i></a>
 			<a target="_blank" class="d-inline-block" href="mailto:hi@mariovarona.dev"><i class="fas fa-envelope"></i></a>
 		</div>
 		<div>
-			<a class="footer-copyright col-4 text-center p-3" href="privacy">$privacy</a>
-			<a class="footer-copyright col-4 text-center p-3" href="tos">$tos</a>
+			<a class="footer-copyright col-4 text-center p-3" href="privacy">Privacy Policy</a>
+			<a class="footer-copyright col-4 text-center p-3" href="tos">Terms of Use</a>
 			<span class="current-year col-4 footer-copyright text-center p-2">© 2020</span>
 		</div>
 	</footer>
