@@ -142,6 +142,14 @@ def populate_section(file, json_file, active_lan, active_section):
 		f.seek(0)
 		f.write(file_content)
 
+		file_content = file_content.replace('$meta_section_title', active_section['meta_title_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$meta_section_description', active_section['meta_description_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
 		file_content = file_content.replace('$alt_img_section', active_section['alt_' + active_lan])
 		f.seek(0)
 		f.write(file_content)
@@ -201,9 +209,18 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 		file_content = f.read()
 		link_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_links.html'
 		gallery_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_gallery.html'
-		gallery_carousel_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_gallery_carousel.html'
+		gallery_card_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'gallery_card.html'
+		gallery_carousel_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'gallery_carousel_item.html'
 
 		file_content = file_content.replace('$subsection_title', active_subsection['title_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$meta_subsection_title', active_subsection['meta_title_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		file_content = file_content.replace('$meta_subsection_description', active_subsection['meta_description_' + active_lan])
 		f.seek(0)
 		f.write(file_content)
 
@@ -229,22 +246,63 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 
 			links_component = links_component.replace('$subsection_link_1', active_subsection['link1'])
 			links_component = links_component.replace('$subsection_link_text_1', active_subsection['text_link1_' + active_lan])
-			links_component = links_component.replace('$hidden2', 'display-none')
-			links_component = links_component.replace('$hidden3', 'display-none')
+			links_component = links_component.replace('$hidden2', 'd-none')
+			links_component = links_component.replace('$hidden3', 'd-none')
 
 		if 'link2' in active_subsection:
 			links_component = links_component.replace('$subsection_link_2', active_subsection['link2'])
 			links_component = links_component.replace('$subsection_link_text_2', active_subsection['text_link2_' + active_lan])
 			links_component = links_component.replace('$hidden2', '')
-			links_component = links_component.replace('$hidden3', 'display-none')
+			links_component = links_component.replace('$hidden3', 'd-none')
 
 		if 'link3' in active_subsection:
 			links_component = links_component.replace('$subsection_link_3', active_subsection['link3'])
 			links_component = links_component.replace('$subsection_link_text_3', active_subsection['text_link3_' + active_lan])
-			links_component = links_component.replace('$hidden3', 'display-none')
+			links_component = links_component.replace('$hidden3', 'd-none')
 			
 
-		file_content = file_content.replace('{subsection_links}', links_component)
+		file_content = file_content.replace('{$subsection_links}', links_component)
+		f.seek(0)
+		f.write(file_content)
+
+		gallery_component = ''
+		gallery_card_component = ''
+		gallery_carousel_component = ''
+
+		if 'gallery' in active_subsection:
+
+			with open(gallery_component_path, 'r+') as gallery:
+				gallery_component = gallery.read()
+				gallery.close()
+
+			gallery_component = gallery_component.replace('$gallery_string', json_file['gallery_string_' + active_lan])
+			gallery_component = gallery_component.replace('$previous_string', json_file['previous_string_' + active_lan])
+			gallery_component = gallery_component.replace('$next_string', json_file['next_string_' + active_lan])
+
+			img_index = 0
+			for image in active_subsection['gallery']:
+				with open(gallery_card_component_path, 'r+') as card:
+					gallery_new_card_component = card.read()
+					card.close()
+				gallery_card_component = gallery_card_component + gallery_new_card_component.replace('$gallery_img_index', str(img_index))
+				gallery_card_component = gallery_card_component.replace('$img_gallery', '../../' + image['img'])
+				gallery_card_component = gallery_card_component.replace('$alt_img_gallery', image['alt_' + active_lan])
+				
+				with open(gallery_carousel_component_path, 'r+') as carousel:
+					gallery_new_carousel_component = carousel.read()
+					carousel.close()
+				gallery_carousel_component = gallery_carousel_component + gallery_new_carousel_component.replace('$img_gallery', '../../' + image['img'])
+				gallery_carousel_component = gallery_carousel_component.replace('$alt_img_gallery', image['alt_' + active_lan])
+				gallery_carousel_component = gallery_carousel_component.replace('$gallery_img_title', image['img_title_' + active_lan])
+				gallery_carousel_component = gallery_carousel_component.replace('$gallery_img_description', image['img_description_' + active_lan])
+				if img_index == 0:
+					gallery_carousel_component = gallery_carousel_component.replace('$active', 'active')
+
+				img_index = img_index + 1
+
+		file_content = file_content.replace('{$subsection_gallery}', gallery_component)
+		file_content = file_content.replace('{$gallery_cards}', gallery_card_component)
+		file_content = file_content.replace('{$gallery_carousel_items}', gallery_carousel_component)
 		f.seek(0)
 		f.write(file_content)
 
