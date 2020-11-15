@@ -43,11 +43,12 @@ def populate_independent_vars(file, json_file, lan):
 				f.close()
 
 def make_url_friendly(name):
-	url = name.replace("Á", "a").replace("á", "a").replace("ä", "a").replace("Ä", "a")
-	url = name.replace("É", "e").replace("é", "e").replace("ë", "e").replace("Ë", "e")
-	url = name.replace("Í", "i").replace("í", "i").replace("ï", "i").replace("Ï", "i")
-	url = name.replace("Ó", "o").replace("ó", "o").replace("ö", "o").replace("Ö", "o")
-	url = name.replace("Ú", "u").replace("ú", "u").replace("ü", "u").replace("Ü", "u")
+	url = name.replace("Á", "a").replace("á", "a").replace("ä", "ae").replace("Ä", "ae")
+	url = url.replace("É", "e").replace("é", "e").replace("ë", "ee").replace("Ë", "ee")
+	url = url.replace("Í", "i").replace("í", "i").replace("ï", "ie").replace("Ï", "ie")
+	url = url.replace("Ó", "o").replace("ó", "o").replace("ö", "oe").replace("Ö", "oe")
+	url = url.replace("Ú", "u").replace("ú", "u").replace("ü", "ue").replace("Ü", "ue")
+	url = url.replace(".", "_").replace(",", "_").replace("-", "_").replace(" ", "-")
 	url = url.lower()
 	return url
 
@@ -319,7 +320,7 @@ def create_index_for_lans(lans, json_file):
 def create_sections_for_lans(lans, json_file):
 	for lan in lans:
 		for section in json_file['sections']:
-			section_filename = section['title_' + lan].lower()
+			section_filename = set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog')
 			section_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename + '.html'
 			shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'section.html', section_path)
 			populate_independent_vars(section_path, json_file, lan)
@@ -330,8 +331,8 @@ def create_sections_for_lans(lans, json_file):
 def create_sub_sections_for_lans_and_section(lans, json_file, section, lan):
 	if 'subsections' in section:
 		for subsection in section['subsections']:
-			section_filename = section['title_' + lan].lower()
-			subsection_filename = subsection['title_' + lan].lower()
+			section_filename = set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog')
+			subsection_filename = set_file_name(subsection['title_' + lan], section['title_en'].lower() == 'blog')
 			section_dir_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename
 			subsection_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename + os.path.sep + subsection_filename + '.html'
 			if not os.path.exists(section_dir_path):
@@ -353,6 +354,14 @@ def clean_html_files():
 				f.truncate()
 				
 			f.close()
+
+def set_file_name(filename, is_blog):
+	filename = make_url_friendly(filename.lower())
+	filename = filename.split()[0]
+	if not is_blog:
+		filename = filename.split("-")[0]
+		filename = filename.split("_")[0]
+	return filename
 
 if __name__=="__main__":
 	json_file = json.load(open(WEB_JSON_FILE_NAME, 'r'))
