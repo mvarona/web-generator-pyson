@@ -10,8 +10,8 @@
 	"head_home_en": "Hello",
 	"head_home_es": "Hola",
 	"head_home_de": "Hallo",
-	"intro_home_en": "I have always been amazed by the possibilities offered by technology to change and improve people’s lives.<br/>Both self-taught and traditionally, I have learned about computer science, communication, economy, marketing and psychology to achieve it.<br/>With Apple’s UX and design, the Google’s passion for software and economic and strategic lessons from other tech giants in mind, I would like to build technology that enhance people’s lives and inspire them to trust themselves.",
-	"intro_home_es": "Desde siempre me han impresionado las posibilidades que ofrece la tecnología para cambiar y mejorar la vida de las personas.<br/>De forma autodidacta y reglada he ido aprendiendo sobre informática, comunicación, economía, marketing y psicología para lograrlo.<br/>Con el diseño y usabilidad de Apple, la pasión por el software de Google y las lecciones económicas y estratégicas de otros gigantes empresariales en mente, me gustaría construir tecnología que mejore la vida de las personas y las inspire a creer en ellas mismas.",
+	"intro_home_en": "</p><p>I have always been amazed by the possibilities offered by technology to change and improve people’s lives.</p><p>Both self-taught and traditionally, I have learned about computer science, communication, economy, marketing and psychology to achieve it.</p><p>With Apple’s UX and design, the Google’s passion for software and economic and strategic lessons from other tech giants in mind, I would like to build technology that enhance people’s lives and inspire them to trust themselves.",
+	"intro_home_es": "</p><p>Desde siempre me han impresionado las posibilidades que ofrece la tecnología para cambiar y mejorar la vida de las personas.</p><p>De forma autodidacta y reglada he ido aprendiendo sobre informática, comunicación, economía, marketing y psicología para lograrlo.</p><p>Con el diseño y usabilidad de Apple, la pasión por el software de Google y las lecciones económicas y estratégicas de otros gigantes empresariales en mente, me gustaría construir tecnología que mejore la vida de las personas y las inspire a creer en ellas mismas.",
 	"intro_home_de": "-",
 	"sections": [
 		{
@@ -648,6 +648,9 @@
 	"privacy_en": "Privacy Policy",
 	"privacy_es": "Política de Privacidad",
 	"privacy_de": "-",
+	"icons_cortesy_en": "Icons by <a href='https://www.icons8.com' target='_blank'>icons8.com</a>",
+	"icons_cortesy_es": "Iconos de <a href='https://www.icons8.com' target='_blank'>icons8.com</a>",
+	"icons_cortesy_de": "-",
 	"next_string_en": "Next",
 	"next_string_es": "Siguiente",
 	"next_string_de": "-",

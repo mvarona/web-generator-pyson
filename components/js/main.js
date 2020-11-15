@@ -27,9 +27,20 @@ function setUpScrollEffect(){
 	});
 }
 
+function truncateMenuItems(){
+	const MAX_LENGTH = 21;
+	const items = document.querySelectorAll(".span-wrapper a");
+	items.forEach(item => {
+		if (item.innerHTML.length > MAX_LENGTH){
+			item.innerHTML = item.innerHTML.slice(0, MAX_LENGTH) + "...";
+		}
+	});
+}
+
 function renderGeneralSettings(){
 	printCurrentYear();
 	setUpScrollEffect();
+	truncateMenuItems();
 }
 
 function loadGalleryItem(index){

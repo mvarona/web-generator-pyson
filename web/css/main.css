@@ -21,6 +21,15 @@ html, body {
 	padding-top: .5rem!important;
 }
 
+nav div#dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	background-color: #d0d0d0!important;
+}
+
 nav .dropdown i {
 	color: rgba(255,255,255,.5);
 }
