@@ -2,6 +2,7 @@ import json
 import os
 import shutil
 import re
+from pathlib import Path
 
 STATIC_FOLDERS = ['css', 'images', 'js']
 COMPONENTS_FOLDER_NAME = 'components'
@@ -37,9 +38,6 @@ def populate_independent_vars(file, json_file, lan):
 			if not isinstance(regex_base_var, list) and regex_base_var in file_content:
 				file_content = file_content.replace(str(regex_base_var), json_file[var])
 				file_content = file_content.replace('$lan', lan)
-				end_pos = file_content.find("</html>")
-				if end_pos != -1:
-					file_content = file_content[:(end_pos+len("</html>"))]
 				f.seek(0)
 				f.write(file_content)
 				f.close()
@@ -201,6 +199,9 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 	(filename, ext) = os.path.splitext(file.split(os.path.sep)[-1])
 	with open(file, 'r+') as f:
 		file_content = f.read()
+		link_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_links.html'
+		gallery_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_gallery.html'
+		gallery_carousel_component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection_gallery_carousel.html'
 
 		file_content = file_content.replace('$subsection_title', active_subsection['title_' + active_lan])
 		f.seek(0)
@@ -210,11 +211,40 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 		f.seek(0)
 		f.write(file_content)
 
-		file_content = file_content.replace('$img_subsection', '../' + active_subsection['img'])
+		file_content = file_content.replace('$img_subsection', '../../' + active_subsection['img'])
 		f.seek(0)
 		f.write(file_content)
 
 		file_content = file_content.replace('$subsection_body', active_subsection['body_' + active_lan])
+		f.seek(0)
+		f.write(file_content)
+
+		links_component = ''
+
+		if 'link1' in active_subsection:
+
+			with open(link_component_path, 'r+') as link:
+				links_component = link.read()
+				link.close()
+
+			links_component = links_component.replace('$subsection_link_1', active_subsection['link1'])
+			links_component = links_component.replace('$subsection_link_text_1', active_subsection['text_link1_' + active_lan])
+			links_component = links_component.replace('$hidden2', 'display-none')
+			links_component = links_component.replace('$hidden3', 'display-none')
+
+		if 'link2' in active_subsection:
+			links_component = links_component.replace('$subsection_link_2', active_subsection['link2'])
+			links_component = links_component.replace('$subsection_link_text_2', active_subsection['text_link2_' + active_lan])
+			links_component = links_component.replace('$hidden2', '')
+			links_component = links_component.replace('$hidden3', 'display-none')
+
+		if 'link3' in active_subsection:
+			links_component = links_component.replace('$subsection_link_3', active_subsection['link3'])
+			links_component = links_component.replace('$subsection_link_text_3', active_subsection['text_link3_' + active_lan])
+			links_component = links_component.replace('$hidden3', 'display-none')
+			
+
+		file_content = file_content.replace('{subsection_links}', links_component)
 		f.seek(0)
 		f.write(file_content)
 
@@ -237,19 +267,34 @@ def create_sections_for_lans(lans, json_file):
 			populate_independent_vars(section_path, json_file, lan)
 			populate_header(section_path, json_file, lan)
 			populate_section(section_path, json_file, lan, section)
-			create_sub_sections_for_lans_and_section(lans, json_file, section)
+			create_sub_sections_for_lans_and_section(lans, json_file, section, lan)
 
-def create_sub_sections_for_lans_and_section(lans, json_file, section):
-	for lan in lans:
-		if 'subsections' in section:
-			for subsection in section['subsections']:
-				subsection_filename = subsection['title_' + lan].lower()
-				subsection_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + subsection_filename + '.html'
-				shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection.html', subsection_path)
-				populate_independent_vars(subsection_path, json_file, lan)
-				populate_header(subsection_path, json_file, lan)
-				populate_subsection(subsection_path, json_file, lan, subsection)
+def create_sub_sections_for_lans_and_section(lans, json_file, section, lan):
+	if 'subsections' in section:
+		for subsection in section['subsections']:
+			section_filename = section['title_' + lan].lower()
+			subsection_filename = subsection['title_' + lan].lower()
+			section_dir_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename
+			subsection_path = WEB_FOLDER_NAME + os.path.sep + lan + os.path.sep + section_filename + os.path.sep + subsection_filename + '.html'
+			if not os.path.exists(section_dir_path):
+				os.mkdir(section_dir_path)
+			shutil.copy(COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'subsection.html', subsection_path)
+			populate_independent_vars(subsection_path, json_file, lan)
+			populate_header(subsection_path, json_file, lan)
+			populate_subsection(subsection_path, json_file, lan, subsection)
 		
+def clean_html_files():
+	for file in Path(WEB_FOLDER_NAME).rglob('*.html'):
+		with open(str(file.parents[0]) + os.path.sep + str(file.name), 'r+') as f:
+			file_content = f.read()
+			end_pos = file_content.find("</html>")
+			if end_pos != -1:
+				file_content = file_content[:(end_pos+len("</html>"))]
+				f.seek(0)
+				f.write(file_content)
+				f.truncate()
+				
+			f.close()
 
 if __name__=="__main__":
 	json_file = json.load(open(WEB_JSON_FILE_NAME, 'r'))
@@ -257,3 +302,4 @@ if __name__=="__main__":
 	create_folders_for_lans(lans)
 	create_index_for_lans(lans, json_file)
 	create_sections_for_lans(lans, json_file)
+	clean_html_files()
