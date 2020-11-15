@@ -3,7 +3,7 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>$meta_subsection_title</title>
+	<title>BMS - App for the Metropolitan Bus of Salamanca - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist</title>
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../images/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114.png" />
@@ -28,19 +28,19 @@
 	
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@MarioVarona" />
-	<meta name="twitter:title" content="$meta_subsection_title" />
-	<meta name="twitter:description" content="$meta_subsection_description" />
+	<meta name="twitter:title" content="BMS - App for the Metropolitan Bus of Salamanca - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist" />
+	<meta name="twitter:description" content="Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data ScientistComputer & Data Scientist" />
 	<meta name="twitter:image" content="../../images/logo.png" />
 
 	<meta property="og:locale" content="en" />
 	<meta property="og:url" content="index.html" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="$meta_subsection_title" />
-	<meta property="og:description" content="$meta_subsection_description" />
+	<meta property="og:title" content="BMS - App for the Metropolitan Bus of Salamanca - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist" />
+	<meta property="og:description" content="Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data ScientistComputer & Data Scientist" />
 	<meta property="og:image" content="../../images/logo.png" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="$meta_subsection_description">
+	<meta name="description" content="Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data ScientistComputer & Data Scientist">
 
 	<link rel="stylesheet" href="../../css/main.css">
 	<link rel="stylesheet" href="../../css/media-queries.css">
@@ -101,11 +101,64 @@
 		
 		<div class="subsection-links w-100 ml-auto mr-auto text-center">
 	<a class="btn btn-outline-light col-2 mr-5 $hidden1" href="https://www.bmsalamanca.com" target="_blank" role="button">Go to site</a>
-	<a class="btn btn-outline-light col-2 mr-5 display-none" href="https://itunes.apple.com/es/app/id1043977321" target="_blank" role="button">Go to iOS app</a>
-	<a class="btn btn-outline-light col-2 display-none" href="https://play.google.com/store/apps/details?id=com.MarioVarona.bms" target="_blank" role="button">Go to Android app</a>
+	<a class="btn btn-outline-light col-2 mr-5 d-none" href="https://itunes.apple.com/es/app/id1043977321" target="_blank" role="button">Go to iOS app</a>
+	<a class="btn btn-outline-light col-2 d-none" href="https://play.google.com/store/apps/details?id=com.MarioVarona.bms" target="_blank" role="button">Go to Android app</a>
 </div>
 
-		{subsection_gallery}
+		<div class="subsection-gallery w-75 ml-auto mr-auto text-center">
+
+	<h1 class="text-left pl-5 ml-3 mb-4">Gallery</h1>
+	
+	<div class="card col-3 mr-5 mb-5 d-inline-block" onclick="loadGalleryItem(0)" data-toggle="modal" data-target="#gallery-modal">
+	<img class="card-img-top" src="../../images/filebox.png" alt="Filebox icon">
+</div><div class="card col-3 mr-5 mb-5 d-inline-block" onclick="loadGalleryItem(1)" data-toggle="modal" data-target="#gallery-modal">
+	<img class="card-img-top" src="../../images/books.png" alt="Books icon">
+</div>
+
+</div>
+
+<div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="Gallery" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content bg-dark">
+		  	<div class="modal-header">
+				<h5 class="modal-title">Gallery</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="$close_string">
+					<span aria-hidden="true">X</span>
+				</button>
+		  	</div>
+		  	<div class="modal-body">
+				<div id="gallery-carousel-indicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#gallery-carousel-indicators" data-slide-to="$gallery_img_index" class="active"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+	<img src="../../images/filebox.png" alt="Filebox icon">
+	<div class="carousel-caption d-none d-md-block">
+		<h5>Filebox</h5>
+		<p>Filebox icon</p>
+	</div>
+</div><div class="carousel-item $active">
+	<img src="../../images/books.png" alt="Books icon">
+	<div class="carousel-caption d-none d-md-block">
+		<h5>Books</h5>
+		<p>Books icon</p>
+	</div>
+</div>
+					</div>
+					<a class="carousel-control-prev" href="#gallery-carousel-indicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#gallery-carousel-indicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 	</section>
 
