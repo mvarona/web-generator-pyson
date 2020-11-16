@@ -29,5 +29,5 @@ var skillsLevelsStrings = {
 	"sufficient_de": "-",
 	"excellent_en": "Excellent",
 	"excellent_es": "Excelente",
-	"excellent_de": "-",
+	"excellent_de": "-"
 };

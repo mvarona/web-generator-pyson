@@ -57,6 +57,7 @@
 
 	<script type="text/javascript" src="../js/skills.js"></script>
 
+
 </head>
 <body class="home" onload="renderGeneralSettings()">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -88,6 +89,24 @@
 		<div class="hero col-4">
 			<h1>$head_home</h1>
 			<p>$intro_home</p>
+			<div class='container' id='highlights'>
+				<div class='row'>
+					<div class='lg-col-6 md-col-12 mr-5'>
+						<span class='number animateNumber'>$projects_count</span> <span class='item'>$projects_string</span>
+					</div>
+					<div class='lg-col-6 md-col-12'>
+						<span class='number animateNumber'>$skills_count</span> <span class='item'>$technical_skills_string</span>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='lg-col-6 md-col-12 mr-5'>
+						<span class='number animateNumber'>$universities_count</span> <span class='item'>$universities_string</span>
+					</div>
+					<div class='lg-col-6 md-col-12'>
+						<span class='number animateNumber'>$courses_count</span> <span class='item'>$courses_string</span>
+					</div>
+				</div>
+			</div>
 		</div>
 		<video autoplay="autoplay" loop="loop" class="bgc" preload="auto" volume="0">
 			<source src="../images/main.mp4" type="video/mp4" />

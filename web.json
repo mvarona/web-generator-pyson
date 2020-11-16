@@ -662,5 +662,18 @@
 	"gallery_string_de": "-",
 	"close_string_en": "Close",
 	"close_string_es": "Cerrar",
-	"close_string_de": "-"
+	"close_string_de": "-",
+	"projects_string_en": "Projects",
+	"projects_string_es": "Proyectos",
+	"projects_string_de": "Projekte",
+	"technical_skills_string_en": "Technical skills",
+	"technical_skills_string_es": "Habilidades técnicas",
+	"technical_skills_string_de": "-",
+	"universities_string_en": "Universities",
+	"universities_string_es": "Universidades",
+	"universities_string_de": "-",
+	"courses_string_en": "Courses",
+	"courses_string_en": "Courses",
+	"courses_string_de": "-",
+	"universities_count": 4
 }

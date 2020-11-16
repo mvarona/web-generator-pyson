@@ -1,5 +1,28 @@
 @media only screen and (max-width: 1500px) {
+	.home .hero {
+		margin-top: 10vh!important;
+	}
 	section#menu a {
 		font-size: 100%;
+	}
+	div#highlights {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.home .hero {
+		margin-top: 5vh!important;
+		margin-left: 10vh!important;
+	}
+	div#highlights {
+		width: 300%!important;
+	}
+	div#highlights .number {
+		font-size: 200%!important;
+	}
+	div#highlights .item {
+		font-size: 60%!important;
 	}
 }
