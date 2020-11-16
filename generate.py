@@ -239,7 +239,7 @@ def populate_section(file, json_file, active_lan, active_section):
 						component_new_content = component_new_content + component_content
 
 				file_content = file_content.replace(regex_menu_subsections, component_new_content)
-				file_content = file_content.replace(regex_cards_mosaic, '')
+				file_content = file_content.replace(regex_highlights_and_cards, '')
 				f.seek(0)
 				f.write(file_content)
 				c.close()
