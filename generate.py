@@ -40,7 +40,46 @@ def populate_independent_vars(file, json_file, lan):
 				file_content = file_content.replace('$lan', lan)
 				f.seek(0)
 				f.write(file_content)
-				f.close()
+
+			if '$projects_count' in file_content:
+				file_content = file_content.replace('$projects_count', str(count_subsections('projects', json_file)))
+
+			if '$skills_count' in file_content:
+				file_content = file_content.replace('$skills_count', str(count_subsections('skills', json_file)))
+
+			if '$universities_count' in file_content:
+				file_content = file_content.replace('$universities_count', str(json_file['universities_count']))
+		
+			if '$courses_count' in file_content:
+				file_content = file_content.replace('$courses_count', str(count_subsections('courses', json_file)))
+	
+			f.seek(0)
+			f.write(file_content)
+			f.close()
+
+def count_subsections(name, json_file):
+	i = 0
+
+	if name == 'courses':
+		for section in json_file['sections']:
+			if 'subsections' in section:
+				for subsection in section['subsections']:
+					if subsection['title_en'].lower() == 'courses':
+						i = subsection['body_en'].count('<br/>') + 1
+						return i
+
+	if name == 'skills':
+		SKILLS_JSON_FILE_NAME = 'components' + os.path.sep + 'js' + os.path.sep + 'skills.json'
+		file_content = json.load(open(SKILLS_JSON_FILE_NAME, 'r'))
+		return len(file_content['skillsData'])
+
+
+	for section in json_file['sections']:
+		if section['title_en'].lower() == name:
+			if 'subsections' in section:
+				i = len(section['subsections'])
+				return i
+	return i
 
 def make_url_friendly(name):
 	url = name.replace("Á", "a").replace("á", "a").replace("ä", "ae").replace("Ä", "ae")
