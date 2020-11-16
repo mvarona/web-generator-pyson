@@ -83,6 +83,27 @@ div#highlights span.item {
 	padding-left: 5px;
 }
 
+div#transparency-highlights * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#transparency-highlights span.number {
+	font-size: 320%;
+}
+
+div#transparency-highlights span.item {
+	font-size: 110%;
+}
+
+div#transparency-mosaic div.card-columns {
+	width: 85%;
+}
+
+.my-text-muted {
+	color: #bfbfbf!important;
+}
+
 section {
 	width: 100%;
 	min-height: 100%;
