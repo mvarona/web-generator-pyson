@@ -207,17 +207,23 @@ def populate_section(file, json_file, active_lan, active_section):
 		f.write(file_content)
 
 		regex_menu_subsections = '{$menu_subsections}'
+		regex_cards_mosaic = '{$cards_mosaic}'
+		regex_highlights_and_cards = '{$highlights_and_cards}'
 
-		if regex_menu_subsections in file_content:
-			component_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'menu_section.html'
+		if regex_menu_subsections in file_content or regex_cards_mosaic in file_content:
+			component_menu_section_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'menu_section.html'
+			component_section_cards_mosaic_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'section_cards_mosaic.html'
+			component_section_card_img_mosaic_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'section_card_img_mosaic.html'
+			component_section_card_txt_mosaic_path = COMPONENTS_FOLDER_NAME + os.path.sep + COMPONENTS_HTML_FOLDER_NAME + os.path.sep + 'section_card_txt_mosaic.html'
 			component_new_content = ''
+
 
 			if 'subsections' in active_section:
 				for subsection_json in active_section['subsections']:
 					name_subsection = subsection_json["title_" + active_lan]
 					img_subsection = "../" + subsection_json["img"]
 					alt_img_subsection = subsection_json["alt_" + active_lan]
-					with open(component_path, 'r+') as c:
+					with open(component_menu_section_path, 'r+') as c:
 						component_content = c.read()
 						component_content = component_content.replace('$section', name_subsection)
 						subsection_path = make_url_friendly(name_subsection)
@@ -233,17 +239,61 @@ def populate_section(file, json_file, active_lan, active_section):
 						component_new_content = component_new_content + component_content
 
 				file_content = file_content.replace(regex_menu_subsections, component_new_content)
+				file_content = file_content.replace(regex_cards_mosaic, '')
 				f.seek(0)
 				f.write(file_content)
 				c.close()
+
 			elif 'body_en' in active_section:
 				file_content = file_content.replace(regex_menu_subsections, active_section['body_' + active_lan])
 				f.seek(0)
 				f.write(file_content)
-			else:
-				file_content = file_content.replace(regex_menu_subsections, '')
-				f.seek(0)
-				f.write(file_content)
+
+				if active_section['title_en'].lower() == 'transparency':
+
+					with open(component_section_cards_mosaic_path, 'r+') as c:
+						component_content = c.read()
+						component_content = component_content.replace('$stat1', str(active_section['data']['stat1']))
+						component_content = component_content.replace('$stat1_text', active_section['data']['stat1_text_' + active_lan])
+						component_content = component_content.replace('$stat2', str(active_section['data']['stat2']))
+						component_content = component_content.replace('$stat2_text', active_section['data']['stat2_text_' + active_lan])
+						component_content = component_content.replace('$stat3', str(active_section['data']['stat3']))
+						component_content = component_content.replace('$stat3_text', active_section['data']['stat3_text_' + active_lan])
+						component_content = component_content.replace('$last_update', active_section['data']['last_update_' + active_lan])
+
+						card_img_template = ''
+						card_txt_template = ''
+						with open(component_section_card_img_mosaic_path, 'r+') as card:
+							card_img_template = card.read()
+							card.close()
+
+						with open(component_section_card_txt_mosaic_path, 'r+') as card:
+							card_txt_template = card.read()
+							card.close()
+						
+						cards_component = ''
+						for card in active_section['data']['cards']:
+							if 'img' in card:
+								new_card_component = card_img_template
+								new_card_component = new_card_component.replace('$img_card', '../' + card['img'])
+								new_card_component = new_card_component.replace('$alt_img_card', card['alt_img_' + active_lan])
+							else:
+								new_card_component = card_txt_template
+							
+							new_card_component = new_card_component.replace('$title_card', card['title_' + active_lan])
+							new_card_component = new_card_component.replace('$subtitle_card', card['subtitle_' + active_lan])
+							new_card_component = new_card_component.replace('$href_card', card['href'])
+							new_card_component = new_card_component.replace('$last_update_card', card['last_update_' + active_lan])
+							new_card_component = new_card_component.replace('$bg_card', card['bg_card'])
+							cards_component = cards_component + new_card_component
+
+						component_content = component_content.replace(regex_cards_mosaic, cards_component)
+						component_new_content = component_content
+
+					file_content = file_content.replace(regex_highlights_and_cards, component_new_content)
+					f.seek(0)
+					f.write(file_content)
+					c.close()
 
 	f.close()
 
@@ -351,7 +401,6 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 		f.write(file_content)
 
 	f.close()
-				
 
 def create_index_for_lans(lans, json_file):
 	for lan in lans:
