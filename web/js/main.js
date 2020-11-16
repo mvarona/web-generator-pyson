@@ -37,10 +37,117 @@ function truncateMenuItems(){
 	});
 }
 
+function renderSkillsChart(){
+	var ctx = document.getElementById('skills-chart').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'horizontalBar',
+	    data: {
+	        labels: Object.keys(skillsData),
+	        datasets: [{
+	            label: '',
+	            data: Object.values(skillsData),
+	            backgroundColor: [
+	                '#1abc9c',
+	                '#16a085',
+	                '#2ecc71',
+	                '#27ae60',
+	                '#3498db',
+	                '#2980b9',
+	                '#9b59b6',
+	                '#8e44ad',
+	                '#34495e',
+	                '#2c3e50',
+	                '#f1c40f',
+	                '#f39c12',
+	                '#e67e22',
+	                '#d35400',
+	                '#e74c3c',
+	                '#c0392b',
+	                '#ecf0f1',
+	                '#bdc3c7',
+	                '#95a5a6',
+	                '#7f8c8d'
+	            ],
+	            borderColor: [
+	                'rgba(75, 192, 192, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            xAxes: [
+            	{
+	            	position: 'bottom',
+	                ticks: {
+	                	mirror: false,
+	                	beginAtZero: true,
+	                    callback: function(value, index, values) {
+	                    	let lan = document.getElementsByTagName('html')[0].getAttribute('lang');
+	                    	console.log("lan " + lan);
+	                    	if (value == 0) {
+	                    		return skillsLevelsStrings["insufficient_" + lan];
+	                    	} else if (value == 50){
+	                    		return skillsLevelsStrings["sufficient_" + lan];
+	                    	} else if (value == 100){
+	                    		return skillsLevelsStrings["excellent_" + lan];
+	                    	}
+	                    },
+	                    fontColor: '#fff',
+	                    fontSize: 16
+	                }
+	            }],
+	            yAxes: [{
+	            	ticks: {
+	            		mirror: true,
+	                    fontColor: '#fff',
+	                    fontStyle: 'normal',
+	                    fontSize: 15
+	                }
+	            }]
+	        },
+	        animation: {
+			    onProgress () {
+			      const chartInstance = this.chart;
+			      const ctx = chartInstance.ctx;
+			      const dataset = this.data.datasets[0];
+			      const meta = chartInstance.controller.getDatasetMeta(0);
+
+			      Chart.helpers.each(meta.data.forEach((bar, index) => {
+			        const label = this.data.labels[index];
+			        const labelPositionX = 50;
+			        const labelWidth = ctx.measureText(label).width + labelPositionX;
+
+			        ctx.textBaseline = 'middle';
+			        ctx.textAlign = 'left';
+			        ctx.font = "normal 15px Helvetica";
+			        ctx.fillStyle = '#fff';
+			        ctx.fillText(label, labelPositionX, bar._model.y);
+			      }));
+			    }
+		  	},
+		  	legend: {
+			    display: false,
+			      labels: {
+			        display: false
+			      }
+		  	}
+	    }
+	});
+}
+
+function conditionalChartRendering(){
+	var charts = document.querySelectorAll('#skills-chart');
+	if (charts.length > 0){
+		renderSkillsChart();
+	}
+}
+
 function renderGeneralSettings(){
 	printCurrentYear();
 	setUpScrollEffect();
 	truncateMenuItems();
+	conditionalChartRendering();
 }
 
 function loadGalleryItem(index){

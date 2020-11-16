@@ -197,8 +197,12 @@ def populate_section(file, json_file, active_lan, active_section):
 				f.seek(0)
 				f.write(file_content)
 				c.close()
+			elif 'body_en' in active_section:
+				file_content = file_content.replace(regex_menu_subsections, active_section['body_' + active_lan])
+				f.seek(0)
+				f.write(file_content)
 			else:
-				file_content = file_content.replace(regex_menu_subsections, "")
+				file_content = file_content.replace(regex_menu_subsections, '')
 				f.seek(0)
 				f.write(file_content)
 

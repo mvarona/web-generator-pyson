@@ -550,8 +550,8 @@
 			"quote_author_en": "Doris Lessing",
 			"quote_author_es": "Doris Lessing",
 			"quote_author_de": "Doris Lessing",
-			"body_en": "<div id='skills-chart'></div>",
-			"body_es": "<div id='skills-chart'></div>",
+			"body_en": "<div id='skills-wrapper'><canvas id='skills-chart' class='chart' width='400' height='400'></canvas></div>",
+			"body_es": "<div id='skills-wrapper'><canvas id='skills-chart' class='chart' width='400' height='400'></canvas></div>",
 			"body_de": "-"
 		},
 
