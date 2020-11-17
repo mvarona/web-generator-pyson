@@ -143,14 +143,6 @@ function conditionalChartRendering(){
 	}
 }
 
-function renderGeneralSettings(){
-	printCurrentYear();
-	setUpScrollEffect();
-	truncateMenuItems();
-	conditionalChartRendering();
-	animateNumbers();
-}
-
 function loadGalleryItem(index){
 	$('.carousel').carousel(index);
 }
@@ -182,4 +174,12 @@ function animateNumbers(){
 		countupEls.forEach(animateCountUp);
 	};
 	runAnimations();
+}
+
+function renderGeneralSettings(){
+	printCurrentYear();
+	setUpScrollEffect();
+	truncateMenuItems();
+	conditionalChartRendering();
+	animateNumbers();
 }

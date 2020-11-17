@@ -60,49 +60,50 @@
 
 </head>
 <body class="home" onload="renderGeneralSettings()">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="col-10">
+	<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<div class="col-lg-10 col-sm-5">
 			<a class="navbar-brand" href="#">$company</a>
 		</div>
 
-	  	<div class="collapse navbar-collapse col-1 float-right">
+	  	<div class="collapse navbar-collapse col-lg-2 col-md-6 float-right">
 			<ul class="navbar-nav mr-auto">
 				{$list_lans}
-			</ul>
-	  	</div>
-
-	  	<div class="collapse navbar-collapse col-1 float-right">
-	  		<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-bars"></i>
-					</a>
-					<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
-						{$dropdown_sections}
-					</div>
+				<li class="nav-item">
+					<div class="collapse navbar-collapse float-right">
+				  		<ul class="navbar-nav mr-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									&nbsp;&nbsp;<i class="fas fa-bars"></i>&nbsp;&nbsp;
+								</a>
+								<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
+									{$dropdown_sections}
+								</div>
+							</li>
+				  		</ul>
+				  	</div>
 				</li>
-	  		</ul>
-	  	</div>
+			</ul>
+	  	</div>	  	
 	</nav>
 
 	<main>
-		<div class="hero col-4">
+		<div class="hero col-lg-4 col-md-10">
 			<h1>$head_home</h1>
 			<p>$intro_home</p>
 			<div class='container' id='highlights'>
 				<div class='row'>
-					<div class='lg-col-6 md-col-12 mr-5'>
+					<div class='col-lg-6 mr-5'>
 						<span class='number animateNumber'>$projects_count</span> <span class='item'>$projects_string</span>
 					</div>
-					<div class='lg-col-6 md-col-12'>
+					<div class='col-lg-6'>
 						<span class='number animateNumber'>$skills_count</span> <span class='item'>$technical_skills_string</span>
 					</div>
 				</div>
 				<div class='row'>
-					<div class='lg-col-6 md-col-12 mr-5'>
+					<div class='col-lg-6 mr-5'>
 						<span class='number animateNumber'>$universities_count</span> <span class='item'>$universities_string</span>
 					</div>
-					<div class='lg-col-6 md-col-12'>
+					<div class='col-lg-6'>
 						<span class='number animateNumber'>$courses_count</span> <span class='item'>$courses_string</span>
 					</div>
 				</div>

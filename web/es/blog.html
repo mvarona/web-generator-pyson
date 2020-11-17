@@ -60,12 +60,12 @@
 
 </head>
 <body class="home" onload="renderGeneralSettings()">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="col-10">
+	<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<div class="col-lg-10 col-sm-5">
 			<a class="navbar-brand" href="#"><span class='capital'>M</>ario<span class='capital'>V</>arona</a>
 		</div>
 
-	  	<div class="collapse navbar-collapse col-1 float-right">
+	  	<div class="collapse navbar-collapse col-lg-2 col-md-6 float-right">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item ">
 	<a class="nav-link" href="../en/blog">en</a>
@@ -74,21 +74,22 @@
 </li><li class="nav-item ">
 	<a class="nav-link" href="../de/blog">de</a>
 </li>
-			</ul>
-	  	</div>
-
-	  	<div class="collapse navbar-collapse col-1 float-right">
-	  		<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-bars"></i>
-					</a>
-					<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
-						<a class="dropdown-item " href="formacion">Formación</a><a class="dropdown-item " href="experiencia">Experiencia</a><a class="dropdown-item " href="proyectos">Proyectos</a><a class="dropdown-item " href="habilidades">Habilidades</a><a class="dropdown-item " href="transparencia">Transparencia</a><a class="dropdown-item " href="blog">Blog</a>
-					</div>
+				<li class="nav-item">
+					<div class="collapse navbar-collapse float-right">
+				  		<ul class="navbar-nav mr-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									&nbsp;&nbsp;<i class="fas fa-bars"></i>&nbsp;&nbsp;
+								</a>
+								<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
+									<a class="dropdown-item " href="formacion">Formación</a><a class="dropdown-item " href="experiencia">Experiencia</a><a class="dropdown-item " href="proyectos">Proyectos</a><a class="dropdown-item " href="habilidades">Habilidades</a><a class="dropdown-item " href="transparencia">Transparencia</a><a class="dropdown-item " href="blog">Blog</a>
+								</div>
+							</li>
+				  		</ul>
+				  	</div>
 				</li>
-	  		</ul>
-	  	</div>
+			</ul>
+	  	</div>	  	
 	</nav>
 
 	<section id="menu">
@@ -106,7 +107,7 @@
 		</nav>
 		
 		<div class="menu-items-wrapper w-75 ml-auto mr-auto">
-			<div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+			<div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="crear-una-web-estatica-desde-json">
 	<div class="img-wrapper">
 		<img alt="Icono de unas herramientas" src="../images/tools.png" />
@@ -115,7 +116,7 @@
 		<a href="crear-una-web-estatica-desde-json" >Crear una web estática desde json</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="el-futuro-de-la-politica">
 	<div class="img-wrapper">
 		<img alt="Icono de gobierno" src="../images/government.png" />

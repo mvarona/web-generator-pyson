@@ -60,12 +60,12 @@
 
 </head>
 <body class="home" onload="renderGeneralSettings()">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="col-10">
+	<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<div class="col-lg-10 col-sm-5">
 			<a class="navbar-brand" href="#"><span class='capital'>M</>ario<span class='capital'>V</>arona</a>
 		</div>
 
-	  	<div class="collapse navbar-collapse col-1 float-right">
+	  	<div class="collapse navbar-collapse col-lg-2 col-md-6 float-right">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item ">
 	<a class="nav-link" href="../en/index">en</a>
@@ -74,41 +74,42 @@
 </li><li class="nav-item ">
 	<a class="nav-link" href="../de/index">de</a>
 </li>
-			</ul>
-	  	</div>
-
-	  	<div class="collapse navbar-collapse col-1 float-right">
-	  		<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-bars"></i>
-					</a>
-					<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
-						<a class="dropdown-item " href="formacion">Formación</a><a class="dropdown-item " href="experiencia">Experiencia</a><a class="dropdown-item " href="proyectos">Proyectos</a><a class="dropdown-item " href="habilidades">Habilidades</a><a class="dropdown-item " href="transparencia">Transparencia</a><a class="dropdown-item " href="blog">Blog</a>
-					</div>
+				<li class="nav-item">
+					<div class="collapse navbar-collapse float-right">
+				  		<ul class="navbar-nav mr-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarMenuSections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									&nbsp;&nbsp;<i class="fas fa-bars"></i>&nbsp;&nbsp;
+								</a>
+								<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarMenuSections">
+									<a class="dropdown-item " href="formacion">Formación</a><a class="dropdown-item " href="experiencia">Experiencia</a><a class="dropdown-item " href="proyectos">Proyectos</a><a class="dropdown-item " href="habilidades">Habilidades</a><a class="dropdown-item " href="transparencia">Transparencia</a><a class="dropdown-item " href="blog">Blog</a>
+								</div>
+							</li>
+				  		</ul>
+				  	</div>
 				</li>
-	  		</ul>
-	  	</div>
+			</ul>
+	  	</div>	  	
 	</nav>
 
 	<main>
-		<div class="hero col-4">
+		<div class="hero col-lg-4 col-md-10">
 			<h1>Hola</h1>
 			<p></p><p>Desde siempre me han impresionado las posibilidades que ofrece la tecnología para cambiar y mejorar la vida de las personas.</p><p>De forma autodidacta y reglada he ido aprendiendo sobre informática, comunicación, economía, marketing y psicología para lograrlo.</p><p>Con el diseño y usabilidad de Apple, la pasión por el software de Google y las lecciones económicas y estratégicas de otros gigantes empresariales en mente, me gustaría construir tecnología que mejore la vida de las personas y las inspire a creer en ellas mismas.</p>
 			<div class='container' id='highlights'>
 				<div class='row'>
-					<div class='lg-col-6 md-col-12 mr-5'>
+					<div class='col-lg-6 mr-5'>
 						<span class='number animateNumber'>14</span> <span class='item'>Proyectos</span>
 					</div>
-					<div class='lg-col-6 md-col-12'>
+					<div class='col-lg-6'>
 						<span class='number animateNumber'>19</span> <span class='item'>Habilidades técnicas</span>
 					</div>
 				</div>
 				<div class='row'>
-					<div class='lg-col-6 md-col-12 mr-5'>
+					<div class='col-lg-6 mr-5'>
 						<span class='number animateNumber'>4</span> <span class='item'>Universidades</span>
 					</div>
-					<div class='lg-col-6 md-col-12'>
+					<div class='col-lg-6'>
 						<span class='number animateNumber'>10</span> <span class='item'>$courses_string</span>
 					</div>
 				</div>
@@ -122,7 +123,7 @@
 	<section id="menu">
 		
 		<div class="menu-items-wrapper w-75 ml-auto mr-auto">
-			<div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+			<div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="formacion">
 	<div class="img-wrapper">
 		<img alt="Icono de libros" src="../images/books.png" />
@@ -131,7 +132,7 @@
 		<a href="formacion" >Formación</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="experiencia">
 	<div class="img-wrapper">
 		<img alt="Icono de un maletín" src="../images/briefcase.png" />
@@ -140,7 +141,7 @@
 		<a href="experiencia" >Experiencia</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="proyectos">
 	<div class="img-wrapper">
 		<img alt="Icono de un archivador con carpetas" src="../images/filebox.png" />
@@ -149,7 +150,7 @@
 		<a href="proyectos" >Proyectos</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="habilidades">
 	<div class="img-wrapper">
 		<img alt="Icono de un engranaje" src="../images/gear.png" />
@@ -158,7 +159,7 @@
 		<a href="habilidades" >Habilidades</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="transparencia">
 	<div class="img-wrapper">
 		<img alt="Icono de un gráfico" src="../images/chart.png" />
@@ -167,7 +168,7 @@
 		<a href="transparencia" >Transparencia</a>
 	</div>
 	</a>
-</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-3 col-md-4 col-sm-6 ml-auto mr-auto">
+</div><div class="menu-item pl-3 pr-3 pt-4 pb-2 col-lg-3 col-md-4 col-sm-12 ml-auto mr-auto">
 	<a href="blog">
 	<div class="img-wrapper">
 		<img alt="Icono de un cuaderno" src="../images/memo.png" />
