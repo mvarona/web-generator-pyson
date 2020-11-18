@@ -190,6 +190,50 @@
 			"quote_author_de": "",
 			"subsections": [
 				{
+					"img": "images/visualbasic.png",
+					"alt_en": "Project logo",
+					"alt_es": "Logo del proyecto",
+					"alt_de": "-",
+					"title_en": "VisualBasic Projects",
+					"title_es": "Proyectos en VisualBasic",
+					"title_de": "VisualBasic Projekte",
+					"meta_title_en": "VisualBasic Projects - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_es": "Proyectos en VisualBasic - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_de": "VisualBasic Projekte - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"body_en": "(2011 - 2013)<br/>My first coding experiences were built over VisualBasic, trying to figure out what is coding and how could I apply those new skills to my student life. To help me with my daily challenges I coded programs which tested the student's knowledge about the periodic table or the Spanish verb tenses.",
+					"body_es": "(2011 - 2013)<br/>Mis primeras experiencias de programación fueron con Visualbasic, intentando averiguar qué era programar y cómo podía aplicar esas nuevas técnicas a vida de estudiante. Para ayudarme en mis tareas diarias programé tests de autoevaluación de la tabla periódica o de las formas verbales en español.",
+					"body_de": "-",
+					"gallery": [
+						{
+							"img": "images/projects/visualbasic_1.png",
+							"alt_en": "Periodic table test",
+							"alt_es": "Autoevaluación de la tabla periódica",
+							"alt_de": "-",
+							"img_title_en": "Periodic table",
+							"img_title_es": "Tabla periódica",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/visualbasic_2.png",
+							"alt_en": "Spanish verb tenses test",
+							"alt_es": "Autoevaluación de las formas verbales españolas",
+							"alt_de": "-",
+							"img_title_en": "I know the verbs (Me sé los verbos)",
+							"img_title_es": "Me sé los verbos",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
+				},
+				{
 					"img": "images/elpisodebilbao.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",

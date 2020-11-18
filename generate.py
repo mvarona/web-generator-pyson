@@ -13,7 +13,7 @@ PATH_SEPARATOR = os.path.sep
 INDEX_FILE_NAME = 'index.html'
 SECTION_FILE_NAME = 'section.html'
 SUBSECTION_FILE_NAME = 'subsection.html'
-SKILLS_JSON_FILE_NAME = 'skills.jons'
+SKILLS_JSON_FILE_NAME = 'skills.json'
 
 def create_folders_for_lans(lans):
 	for lan in lans:
@@ -395,8 +395,8 @@ def count_subsections(name, json_file):
 						return i
 
 	if name == 'skills':
-		SKILLS_JSON_FILE_NAME = 'components' + PATH_SEPARATOR + 'js' + PATH_SEPARATOR + SKILLS_JSON_FILE_NAME
-		file_content = json.load(open(SKILLS_JSON_FILE_NAME, 'r'))
+		SKILLS_JSON_FILE_PATH = 'components' + PATH_SEPARATOR + 'js' + PATH_SEPARATOR + SKILLS_JSON_FILE_NAME
+		file_content = json.load(open(SKILLS_JSON_FILE_PATH, 'r'))
 		return len(file_content['skillsData'])
 
 
