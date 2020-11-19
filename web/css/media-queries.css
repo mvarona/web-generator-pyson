@@ -7,11 +7,7 @@
 	section#menu a {
 		font-size: 100%;
 	}
-
-	div#highlights {
-		width: 300%!important;
-	}
-
+	
 	div#highlights .number {
 		font-size: 200%!important;
 	}
