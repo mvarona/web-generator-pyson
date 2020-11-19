@@ -190,7 +190,7 @@
 			"quote_author_de": "",
 			"subsections": [
 				{
-					"img": "images/visualbasic.png",
+					"img": "images/projects/visualbasic.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -234,7 +234,7 @@
 					]
 				},
 				{
-					"img": "images/elpisodebilbao.png",
+					"img": "images/projects/logo_elpisodebilbao.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -249,10 +249,60 @@
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"body_en": "(2013 - 2014)<br/>Website built from scratch to promote a family residence on sale.",
 					"body_es": "(2013 - 2014)<br/>Sitio web creado desde cero con la finalidad de promocionar la venta de una vivienda familiar.",
-					"body_de": "-"
+					"body_de": "-",
+					"gallery": [
+						{
+							"img": "images/projects/elpisodebilbao_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/elpisodebilbao_2.png",
+							"alt_en": "Reasons to buy",
+							"alt_es": "Razones para comprar",
+							"alt_de": "-",
+							"img_title_en": "Reasons to buy",
+							"img_title_es": "Razones para comprar",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/elpisodebilbao_5.png",
+							"alt_en": "Error 404",
+							"alt_es": "Error 404",
+							"alt_de": "-",
+							"img_title_en": "Error 404",
+							"img_title_es": "Error 404",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/logo_elpisodebilbao.png",
+							"alt_en": "Logo",
+							"alt_es": "Logo",
+							"alt_de": "-",
+							"img_title_en": "Logo",
+							"img_title_es": "Logo",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/alexia.png",
+					"img": "images/projects/logo_alexia.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -267,10 +317,132 @@
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"body_en": "(2014)<br/>Operational concept prototype for a possible future version of Alexia, the platform for the education sector by Cospa&Agilmic. After holding a meeting with its development team, the multinational company included some features from the prototype on the next Alexia version.",
 					"body_es": "(2014)<br/>Prototipo funcional para una posible futura versión de la plataforma para el sector educativo Alexia, de la empresa Cospa&Agilmic. Tras concertar una reunión con su equipo de desarrollo, la compañía multinacional decidió incluir algunas características del prototipo en la siguiente versión de Alexia.",
-					"body_de": "-"
+					"body_de": "-",
+					"gallery": [
+						{
+							"img": "images/projects/alexia_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_2.png",
+							"alt_en": "Dashboard",
+							"alt_es": "Dashboard",
+							"alt_de": "-",
+							"img_title_en": "Dashboard",
+							"img_title_es": "Dashboard",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_10.png",
+							"alt_en": "Promotional material",
+							"alt_es": "Material promocional",
+							"alt_de": "-",
+							"img_title_en": "Promotional material",
+							"img_title_es": "Material promocional",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_3.png",
+							"alt_en": "Calendar",
+							"alt_es": "Calendar",
+							"alt_de": "-",
+							"img_title_en": "Calendar",
+							"img_title_es": "Calendar",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_4.png",
+							"alt_en": "Grades",
+							"alt_es": "Calificaciones",
+							"alt_de": "-",
+							"img_title_en": "Grades",
+							"img_title_es": "Calificaciones",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_5.png",
+							"alt_en": "Messages",
+							"alt_es": "Comunicados",
+							"alt_de": "-",
+							"img_title_en": "Messages",
+							"img_title_es": "Comunicados",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_7.png",
+							"alt_en": "Message",
+							"alt_es": "Comunicado",
+							"alt_de": "-",
+							"img_title_en": "Message",
+							"img_title_es": "Comunicado",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_6.png",
+							"alt_en": "Incidents",
+							"alt_es": "Incidencias",
+							"alt_de": "-",
+							"img_title_en": "Incidents",
+							"img_title_es": "Incidencias",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/alexia_8.png",
+							"alt_en": "Dossier",
+							"alt_es": "Dossier",
+							"alt_de": "-",
+							"img_title_en": "Dossier",
+							"img_title_es": "Dossier",
+							"img_title_de": "-",
+							"img_description_en": "A dossier aimed to have atractive claims for the main new features was included. The rebranding had 100 improvements.",
+							"img_description_es": "Se incluyó un dossier que buscaba tener atractivos copys para las funcionalidades más destacadas. En total, el rediseñó constó de 100 mejoras.",
+							"img_description_de": "-"
+						},
+						{
+							"img": "images/projects/alexia_9.png",
+							"alt_en": "Dossier",
+							"alt_es": "Dossier",
+							"alt_de": "-",
+							"img_title_en": "Dossier",
+							"img_title_es": "Dossier",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/bms.png",
+					"img": "images/projects/logo_bms.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -300,33 +472,117 @@
 					"text_link3_de": "Gehe auf die Android App",
 					"gallery": [
 						{
-							"img": "images/filebox.png",
-							"alt_en": "Filebox icon",
-							"alt_es": "Icono de un archivador con carpetas",
+							"img": "images/projects/bms_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
 							"alt_de": "-",
-							"img_title_en": "Filebox",
-							"img_title_es": "Título de la foto",
-							"img_title_de": "Foto Titel",
-							"img_description_en": "Filebox icon",
-							"img_description_es": "Icono de un archivador con carpetas",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_2.png",
+							"alt_en": "Features",
+							"alt_es": "Características",
+							"alt_de": "-",
+							"img_title_en": "Features",
+							"img_title_es": "Características",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_3.png",
+							"alt_en": "BMS Market Research",
+							"alt_es": "Estudio de Mercado de BMS",
+							"alt_de": "-",
+							"img_title_en": "BMS Market Research",
+							"img_title_es": "Estudio de Mercado de BMS",
+							"img_title_de": "-",
+							"img_description_en": "One of the used funding channels was to carry out market researches from Salamanca's province with user-provided data.",
+							"img_description_es": "Una de las formas de financiación buscadas fue realizar estudios de mercado sobre la provincia de Salamanca con los datos de los usuarios.",
 							"img_description_de": "-"
 						},
 						{
-							"img": "images/books.png",
-							"alt_en": "Books icon",
-							"alt_es": "Icono de unos libros",
+							"img": "images/projects/bms_4.png",
+							"alt_en": "BMS Market Research Features",
+							"alt_es": "Características del Estudio de Mercado de BMS",
 							"alt_de": "-",
-							"img_title_en": "Books",
-							"img_title_es": "Libros",
-							"img_title_de": "Büchern",
-							"img_description_en": "Books icon",
-							"img_description_es": "Icono de unos libros",
+							"img_title_en": "BMS Market Research Features",
+							"img_title_es": "Cracterísticas del Estudio de Mercado de BMS",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_5.png",
+							"alt_en": "Social media ad",
+							"alt_es": "Anuncio para redes sociales",
+							"alt_de": "-",
+							"img_title_en": "Social media ad",
+							"img_title_es": "Anuncio para redes sociales",
+							"img_title_de": "-",
+							"img_description_en": "Over the years, visual posts have been published on social media from time to time, for the purpose of advertising app's new features.",
+							"img_description_es": "A lo largo de los años se han ido publicando posts visuales periódicos en las redes sociales para anunciar las características de nuevas versiones de la app.",
+							"img_description_de": "-"
+						},
+						{
+							"img": "images/projects/bms_6.png",
+							"alt_en": "App home view",
+							"alt_es": "Vista de inicio de la app",
+							"alt_de": "-",
+							"img_title_en": "App home view",
+							"img_title_es": "Vista de inicio de la app",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_7.png",
+							"alt_en": "Timetables",
+							"alt_es": "Horarios",
+							"alt_de": "-",
+							"img_title_en": "Timetables",
+							"img_title_es": "Horarios",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_8.png",
+							"alt_en": "Stop",
+							"alt_es": "Parada",
+							"alt_de": "-",
+							"img_title_en": "Stop",
+							"img_title_es": "Parada",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/bms_9.png",
+							"alt_en": "Notices",
+							"alt_es": "Avisos",
+							"alt_de": "-",
+							"img_title_en": "Notices",
+							"img_title_es": "Avisos",
+							"img_title_de": "-",
+							"img_description_en": "The app development included a backend platform which allowed the bus company to upload service notices and notify the users.",
+							"img_description_es": "El desarrollo de la app incluyó una plataforma backend que permite a la empresa gestora de los servicios subir avisos y notificarlos a los usuarios.",
 							"img_description_de": "-"
 						}
 					]
 				},
 				{
-					"img": "images/cameratasalmantina.png",
+					"img": "images/projects/logo_cameratasalmantina.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -345,10 +601,60 @@
 					"link1": "http://www.cameratasalmantina.es",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/cameratasalmantina_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/cameratasalmantina_2.png",
+							"alt_en": "Events",
+							"alt_es": "Eventos",
+							"alt_de": "-",
+							"img_title_en": "Events",
+							"img_title_es": "Eventos",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/cameratasalmantina_3.png",
+							"alt_en": "Course landing",
+							"alt_es": "Landing del curso",
+							"alt_de": "-",
+							"img_title_en": "Course landing",
+							"img_title_es": "Landing del curso",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/cameratasalmantina_4.png",
+							"alt_en": "Gallery",
+							"alt_es": "Galería",
+							"alt_de": "-",
+							"img_title_en": "Gallery",
+							"img_title_es": "Galería",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/angelescaidosellibro.png",
+					"img": "images/projects/logo_angelescaidosellibro.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -363,10 +669,24 @@
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"body_en": "(2017 - 2019)<br/>Backend platform to manage and send an ebook on demand.<br/>Frontend web based on Wordpress.",
 					"body_es": "(2017 - 2019)<br/>Plataforma backend para la gestión y envíos de un libro electrónico.<br/>Web frontend basada en Wordpress.",
-					"body_de": "-"
+					"body_de": "-",
+					"gallery": [
+						{
+							"img": "images/projects/angelescaidos_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/memkey.png",
+					"img": "images/projects/logo_memkey.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -393,10 +713,60 @@
 					"text_link2_de": "Gehe auf die iOS App",
 					"text_link3_en": "Go to Android app",
 					"text_link3_es": "Ir a la app de Android",
-					"text_link3_de": "Gehe auf die Android App"
+					"text_link3_de": "Gehe auf die Android App",
+					"gallery": [
+						{
+							"img": "images/projects/memkey_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/memkey_2.png",
+							"alt_en": "Mobile keyboard",
+							"alt_es": "Teclado móvil",
+							"alt_de": "-",
+							"img_title_en": "Mobile keyboard",
+							"img_title_es": "Teclado móvil",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/memkey_3.png",
+							"alt_en": "Search on keyboard",
+							"alt_es": "Búsqueda en el teclado",
+							"alt_de": "-",
+							"img_title_en": "Search on keyboard",
+							"img_title_es": "Búsqueda en el teclado",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/memkey_4.png",
+							"alt_en": "Paste on any app",
+							"alt_es": "Pegar en cualquier app",
+							"alt_de": "-",
+							"img_title_en": "Paste on any app",
+							"img_title_es": "Pegar en cualquier app",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/burndownchartist.png",
+					"img": "images/projects/logo_burndownchartist.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -415,10 +785,60 @@
 					"link1": "https://burndownchartist.appspot.com",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/burndownchartist_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/burndownchartist_2.png",
+							"alt_en": "Features",
+							"alt_es": "Características",
+							"alt_de": "-",
+							"img_title_en": "Features",
+							"img_title_es": "Características",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/burndownchartist_3.png",
+							"alt_en": "Features",
+							"alt_es": "Características",
+							"alt_de": "-",
+							"img_title_en": "Features",
+							"img_title_es": "Características",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/burndownchartist_4.png",
+							"alt_en": "BurndownChart with Todoist tasks",
+							"alt_es": "BurndownChart con tareas de Todoist",
+							"alt_de": "-",
+							"img_title_en": "BurndownChart with Todoist tasks",
+							"img_title_es": "BurndownChart con tareas de Todoist",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/alfio.png",
+					"img": "images/projects/logo_alfio.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -437,10 +857,24 @@
 					"link1": "https://alf.io",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/alfio_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/sweetalert.png",
+					"img": "images/projects/logo_sweetalert.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -459,10 +893,24 @@
 					"link1": "https://github.com/mvarona/SweetAlert-iOS",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/sweetalert_1.gif",
+							"alt_en": "Alerts sample",
+							"alt_es": "Muestra de alertas",
+							"alt_de": "-",
+							"img_title_en": "Alerts sample",
+							"img_title_es": "Muestra de alertas",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/cartascontralahumanidad.png",
+					"img": "images/projects/logo_cartascontralahumanidad.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -481,10 +929,48 @@
 					"link1": "https://www.cartascontralahumanidad.es",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/cartascontralahumanidad_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/cartascontralahumanidad_2.png",
+							"alt_en": "Cards selection",
+							"alt_es": "Selección del mazo",
+							"alt_de": "-",
+							"img_title_en": "Cards selection",
+							"img_title_es": "Selección del mazo",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/cartascontralahumanidad_3.png",
+							"alt_en": "Card selection",
+							"alt_es": "Selección de la carta",
+							"alt_de": "-",
+							"img_title_en": "Card selection",
+							"img_title_es": "Selección de la carta",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/fundhabit.png",
+					"img": "images/projects/logo_fundhabit.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -503,10 +989,36 @@
 					"link1": "https://mvarona.github.io/fundhabit",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/fundhabit_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/fundhabit_2.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/iberdrolux.png",
+					"img": "images/projects/logo_iberdrolux.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -525,10 +1037,36 @@
 					"link1": "https://mvarona.github.io/iberdrolux",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/iberdrolux_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/iberdrolux_2.png",
+							"alt_en": "Terminal",
+							"alt_es": "Terminal",
+							"alt_de": "-",
+							"img_title_en": "Terminal",
+							"img_title_es": "Terminal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
-					"img": "images/covidcyl.png",
+					"img": "images/projects/logo_covidcyl.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -547,10 +1085,60 @@
 					"link1": "https://mvarona.github.io/covidcyl",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/covidcyl_1.png",
+							"alt_en": "Town search",
+							"alt_es": "Búsqueda de municipio",
+							"alt_de": "-",
+							"img_title_en": "Town search",
+							"img_title_es": "Búsqueda de municipio",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/covidcyl_2.png",
+							"alt_en": "Full table",
+							"alt_es": "Tabla completa",
+							"alt_de": "-",
+							"img_title_en": "Full table",
+							"img_title_es": "Tabla completa",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/covidcyl_3.png",
+							"alt_en": "Bars chart",
+							"alt_es": "Gráfico de barras",
+							"alt_de": "-",
+							"img_title_en": "Bars chart",
+							"img_title_es": "Gráfico de barras",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/covidcyl_4.png",
+							"alt_en": "Siri shortcut",
+							"alt_es": "Atajo de Siri",
+							"alt_de": "-",
+							"img_title_en": "Siri shortcut",
+							"img_title_es": "Atajo de Siri",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}						
+					] 
 				},
 				{
-					"img": "images/todayist.png",
+					"img": "images/projects/logo_todayist.png",
 					"alt_en": "Project logo",
 					"alt_es": "Logo del proyecto",
 					"alt_de": "-",
@@ -569,7 +1157,33 @@
 					"link1": "https://mvarona.github.io/todayist",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/todayist_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "-",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/todayist_2.png",
+							"alt_en": "Settings",
+							"alt_es": "Ajustes",
+							"alt_de": "-",
+							"img_title_en": "Settings",
+							"img_title_es": "Ajustes",
+							"img_title_de": "-",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				}
 			]
 		},
