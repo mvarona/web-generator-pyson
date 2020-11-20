@@ -170,10 +170,35 @@ function animateNumbers(){
 
 	const runAnimations = () => {
 		const countupEls = document.querySelectorAll('.animateNumber');
-		console.log(countupEls.length);
 		countupEls.forEach(animateCountUp);
 	};
 	runAnimations();
+}
+
+function detectLanguage(){
+	let userLang = navigator.language || navigator.userLanguage;
+	let enDetected = "We think we have a better version for you! <a href='https://www.mvarona.dev/en/index'>Read this site in English</a>";
+	let esDetected = "¡Creemos que tenemos una mejor versión para ti! <a href='https://www.mvarona.dev/en/index'>Lee este sitio en español</a>";
+	let deDetected = "Wir denken, wir haben eine bessere Version für dich! <a href='https://www.mvarona.dev/en/index'>Lies diese Seite auf Deutsch</a>";
+	let url = window.location.href;
+	let warning = document.querySelector('#lan-alert');
+	let newElement = document.createElement('span');
+		
+	if (userLang.includes('es') && !url.includes('es/')){
+		newElement.innerHTML = esDetected;
+		warning.insertBefore(newElement, warning.firstChild);
+		$('#lan-alert').delay(500).slideDown();
+	} else if (userLang.includes('de') && !url.includes('de/')){
+		newElement.innerHTML = deDetected;
+		warning.insertBefore(newElement, warning.firstChild);$('#lan-alert').show();
+		$('#lan-alert').delay(500).slideDown();
+	} else if (userLang.includes('en') && !url.includes('en/')){
+		newElement.innerHTML = enDetected;
+		warning.insertBefore(newElement, warning.firstChild);
+		$('#lan-alert').delay(500).slideDown();
+	}
+
+
 }
 
 function renderGeneralSettings(){
@@ -182,4 +207,9 @@ function renderGeneralSettings(){
 	truncateMenuItems();
 	conditionalChartRendering();
 	animateNumbers();
+	detectLanguage();
 }
+
+$("#lan-alert").on("click", "button.close", function() {
+	$(this).parent().slideUp(500).delay(1000).hide('slow');
+});

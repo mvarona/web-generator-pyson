@@ -17,6 +17,19 @@ html, body {
 	color: rgb(245,245,245);
 }
 
+.alert-warning {
+	display: none;
+}
+
+.alert-warning, .alert-warning span {
+	color: black!important;
+	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.alert-warning a {
+	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
 .navbar-brand {	
 	padding-top: .5rem!important;
 }
