@@ -177,27 +177,48 @@ function animateNumbers(){
 
 function detectLanguage(){
 	let userLang = navigator.language || navigator.userLanguage;
-	let enDetected = "We think we have a better version for you! <a href='https://www.mvarona.dev/en/index'>Read this site in English</a>";
-	let esDetected = "¡Creemos que tenemos una mejor versión para ti! <a href='https://www.mvarona.dev/en/index'>Lee este sitio en español</a>";
-	let deDetected = "Wir denken, wir haben eine bessere Version für dich! <a href='https://www.mvarona.dev/en/index'>Lies diese Seite auf Deutsch</a>";
+	let enDetected = "We think we have a better version for you! <a href='https://www.mariovarona.dev/en/index'>Read this site in English</a>";
+	let esDetected = "¡Creemos que tenemos una mejor versión para ti! <a href='https://www.mariovarona.dev/en/index'>Lee este sitio en español</a>";
+	let deDetected = "Wir denken, wir haben eine bessere Version für dich! <a href='https://www.mariovarona.dev/en/index'>Lies diese Seite auf Deutsch</a>";
+
+	let enLegalDetected = "We are sorry, the only legally binding version of these terms is the Spanish one";
+	let deLegalDetected = "Es tut uns leid, die einzige rechtsverbindliche Version dieser Bedingungen ist die spanische";
+
 	let url = window.location.href;
+	let queryString = window.location.search;
+	let urlParams = new URLSearchParams(queryString);
 	let warning = document.querySelector('#lan-alert');
 	let newElement = document.createElement('span');
-		
-	if (userLang.includes('es') && !url.includes('es/')){
-		newElement.innerHTML = esDetected;
-		warning.insertBefore(newElement, warning.firstChild);
-		$('#lan-alert').delay(500).slideDown();
-	} else if (userLang.includes('de') && !url.includes('de/')){
-		newElement.innerHTML = deDetected;
-		warning.insertBefore(newElement, warning.firstChild);$('#lan-alert').show();
-		$('#lan-alert').delay(500).slideDown();
-	} else if (userLang.includes('en') && !url.includes('en/')){
-		newElement.innerHTML = enDetected;
-		warning.insertBefore(newElement, warning.firstChild);
-		$('#lan-alert').delay(500).slideDown();
-	}
+	
+	if (url.includes('/tos') || url.includes('/privacy')){
 
+		if (urlParams.get('lan') == 'de'){
+			newElement.innerHTML = deLegalDetected;
+			warning.insertBefore(newElement, warning.firstChild);
+			$('#lan-alert').delay(500).slideDown();
+		}
+
+		if (urlParams.get('lan') == 'en'){
+			newElement.innerHTML = enLegalDetected;
+			warning.insertBefore(newElement, warning.firstChild);
+			$('#lan-alert').delay(500).slideDown();
+		}
+
+	} else {
+		if (userLang.includes('es') && !url.includes('es/')){
+			newElement.innerHTML = esDetected;
+			warning.insertBefore(newElement, warning.firstChild);
+			$('#lan-alert').delay(500).slideDown();
+		} else if (userLang.includes('de') && !url.includes('de/')){
+			newElement.innerHTML = deDetected;
+			warning.insertBefore(newElement, warning.firstChild);$('#lan-alert').show();
+			$('#lan-alert').delay(500).slideDown();
+		} else if (userLang.includes('en') && !url.includes('en/')){
+			newElement.innerHTML = enDetected;
+			warning.insertBefore(newElement, warning.firstChild);
+			$('#lan-alert').delay(500).slideDown();
+		}
+	}
 
 }
 
