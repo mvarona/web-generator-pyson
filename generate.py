@@ -4,16 +4,22 @@ import shutil
 import re
 from pathlib import Path
 
-STATIC_FOLDERS = ['css', 'images', 'js']
+ABSOLUTE_URL = 'https://www.mvarona.dev/'
+ONE_DIR_UP = '../'
+TWO_DIRS_UP = '../../'
 COMPONENTS_FOLDER_NAME = 'components'
 COMPONENTS_HTML_FOLDER_NAME = 'html'
-WEB_FOLDER_NAME = 'web'
-WEB_JSON_FILE_NAME = 'web.json'
 PATH_SEPARATOR = os.path.sep
+STATIC_FOLDERS = ['css', 'images', 'js']
 INDEX_FILE_NAME = 'index.html'
 SECTION_FILE_NAME = 'section.html'
 SUBSECTION_FILE_NAME = 'subsection.html'
 SKILLS_JSON_FILE_NAME = 'skills.json'
+WEB_FOLDER_NAME = 'web'
+WEB_JSON_FILE_NAME = 'web.json'
+
+# TODO: Change to load absolute paths:
+IS_PRODUCTION = False
 
 def create_folders_for_lans(lans):
 	for lan in lans:
@@ -49,7 +55,7 @@ def create_sections_for_lans(lans, json_file):
 			shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + SECTION_FILE_NAME, section_path)
 			
 			populate_independent_vars(section_path, json_file, lan)
-			populate_header(section_path, json_file, lan)
+			populate_header(section_path, json_file, lan, section)
 			populate_section(section_path, json_file, lan, section)
 			create_sub_sections_for_lans_and_section(lans, json_file, section, lan)
 
@@ -68,7 +74,7 @@ def create_sub_sections_for_lans_and_section(lans, json_file, section, lan):
 			shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + SUBSECTION_FILE_NAME, subsection_path)
 			
 			populate_independent_vars(subsection_path, json_file, lan)
-			populate_header(subsection_path, json_file, lan)
+			populate_header(subsection_path, json_file, lan, section, subsection)
 			populate_subsection(subsection_path, json_file, lan, subsection)
 
 def populate_independent_vars(file, json_file, lan):
@@ -104,7 +110,7 @@ def populate_independent_vars(file, json_file, lan):
 			f.write(file_content)
 			f.close()
 
-def populate_header(file, json_file, active_lan):
+def populate_header(file, json_file, active_lan, section=None, subsection=None):
 	(filename, ext) = os.path.splitext(file.split(PATH_SEPARATOR)[-1])
 	with open(file, 'r+') as f:
 		file_content = f.read()
@@ -128,6 +134,8 @@ def populate_header(file, json_file, active_lan):
 					else:
 						component_content = component_content.replace('$active', '')
 
+					component_content = component_content.replace('$path_to_lan', get_path_for_lan(lan_json, section, subsection))
+
 					component_new_content = component_new_content + component_content
 
 			file_content = replace_text_in_file(f, file_content, regex_lans, component_new_content)
@@ -147,10 +155,23 @@ def populate_header(file, json_file, active_lan):
 					section_path = set_file_name(name_section, section_json['title_en'].lower() == 'blog')
 					component_content = component_content.replace('$path_section', section_path)
 
-					if name_section in filename:
-						component_content = component_content.replace('$active', 'active')
-					else:
-						component_content = component_content.replace('$active', '')
+					if section is None and subsection is None:
+						component_content = component_content.replace('$dropdown_section_active', '')
+
+					if not section is None and subsection is None:
+						if filename.lower().split("-")[0] in name_section.lower():
+							component_content = component_content.replace('$dropdown_section_active', 'active')
+						else:
+							component_content = component_content.replace('$dropdown_section_active', '')
+					
+					if not section is None and not subsection is None:
+						if name_section == section['title_' + active_lan]:
+							component_content = component_content.replace('$dropdown_section_active', 'active')
+						else:
+							component_content = component_content.replace('$dropdown_section_active', '')
+					
+
+					c.close()
 
 					component_new_content = component_new_content + component_content
 
@@ -163,7 +184,7 @@ def populate_header(file, json_file, active_lan):
 
 			for section_json in json_file['sections']:
 				name_section = section_json["title_" + active_lan]
-				img_section = "../" + section_json["img"]
+				img_section = return_url_for_environment(ONE_DIR_UP, section_json["img"])
 				alt_img_section = section_json["alt_" + active_lan]
 
 				with open(component_path, 'r+') as c:
@@ -174,7 +195,7 @@ def populate_header(file, json_file, active_lan):
 					component_content = component_content.replace('$img_section', img_section)
 					component_content = component_content.replace('$alt_img_section', alt_img_section)
 
-					if name_section in filename:
+					if filename.lower().split("-")[0] in name_section:
 						component_content = component_content.replace('$active', 'active')
 					else:
 						component_content = component_content.replace('$active', '')
@@ -196,7 +217,7 @@ def populate_section(file, json_file, active_lan, active_section):
 		file_content = replace_text_in_file(f, file_content, '$meta_section_title', active_section['meta_title_' + active_lan])
 		file_content = replace_text_in_file(f, file_content, '$meta_section_description', active_section['meta_description_' + active_lan])
 		file_content = replace_text_in_file(f, file_content, '$alt_img_section', active_section['alt_' + active_lan])
-		file_content = replace_text_in_file(f, file_content, '$img_section', '../' + active_section['img'])
+		file_content = replace_text_in_file(f, file_content, '$img_section', return_url_for_environment(ONE_DIR_UP, active_section['img']))
 		file_content = replace_text_in_file(f, file_content, '$quote_section', active_section['quote_' + active_lan])
 		file_content = replace_text_in_file(f, file_content, '$author_section', active_section['quote_author_' + active_lan])
 		
@@ -215,7 +236,7 @@ def populate_section(file, json_file, active_lan, active_section):
 			if 'subsections' in active_section:
 				for subsection_json in active_section['subsections']:
 					name_subsection = subsection_json["title_" + active_lan]
-					img_subsection = "../" + subsection_json["img"]
+					img_subsection = return_url_for_environment(ONE_DIR_UP, subsection_json["img"])
 					alt_img_subsection = subsection_json["alt_" + active_lan]
 					
 					with open(component_menu_section_path, 'r+') as c:
@@ -226,11 +247,6 @@ def populate_section(file, json_file, active_lan, active_section):
 						component_content = component_content.replace('$path_section', subsection_path)
 						component_content = component_content.replace('$img_section', img_subsection)
 						component_content = component_content.replace('$alt_img_section', alt_img_subsection)
-
-						if name_subsection in filename:
-							component_content = component_content.replace('$active', 'active')
-						else:
-							component_content = component_content.replace('$active', '')
 
 						component_new_content = component_new_content + component_content
 
@@ -268,7 +284,7 @@ def populate_section(file, json_file, active_lan, active_section):
 						for card in active_section['data']['cards']:
 							if 'img' in card:
 								new_card_component = card_img_template
-								new_card_component = new_card_component.replace('$img_card', '../' + card['img'])
+								new_card_component = new_card_component.replace('$img_card', return_url_for_environment(ONE_DIR_UP, card['img']))
 								new_card_component = new_card_component.replace('$alt_img_card', card['alt_img_' + active_lan])
 							else:
 								new_card_component = card_txt_template
@@ -303,7 +319,7 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 		file_content = replace_text_in_file(f, file_content, '$meta_subsection_title', active_subsection['meta_title_' + active_lan])
 		file_content = replace_text_in_file(f, file_content, '$meta_subsection_description', active_subsection['meta_description_' + active_lan])	
 		file_content = replace_text_in_file(f, file_content, '$alt_img_subsection', active_subsection['alt_' + active_lan])
-		file_content = replace_text_in_file(f, file_content, '$img_subsection', '../../' + active_subsection['img'])
+		file_content = replace_text_in_file(f, file_content, '$img_subsection', return_url_for_environment(TWO_DIRS_UP, active_subsection['img']))
 		file_content = replace_text_in_file(f, file_content, '$subsection_body', active_subsection['body_' + active_lan])
 		
 		links_component = ''
@@ -354,14 +370,14 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 					card.close()
 
 				gallery_card_component = gallery_card_component + gallery_new_card_component.replace('$gallery_img_index', str(img_index))
-				gallery_card_component = gallery_card_component.replace('$img_gallery', '../../' + image['img'])
+				gallery_card_component = gallery_card_component.replace('$img_gallery', return_url_for_environment(TWO_DIRS_UP, image['img']))
 				gallery_card_component = gallery_card_component.replace('$alt_img_gallery', image['alt_' + active_lan])
 				
 				with open(gallery_carousel_component_path, 'r+') as carousel:
 					gallery_new_carousel_component = carousel.read()
 					carousel.close()
 
-				gallery_carousel_component = gallery_carousel_component + gallery_new_carousel_component.replace('$img_gallery', '../../' + image['img'])
+				gallery_carousel_component = gallery_carousel_component + gallery_new_carousel_component.replace('$img_gallery', return_url_for_environment(TWO_DIRS_UP, image['img']))
 				gallery_carousel_component = gallery_carousel_component.replace('$alt_img_gallery', image['alt_' + active_lan])
 				gallery_carousel_component = gallery_carousel_component.replace('$gallery_img_title', image['img_title_' + active_lan])
 				gallery_carousel_component = gallery_carousel_component.replace('$gallery_img_description', image['img_description_' + active_lan])
@@ -424,6 +440,20 @@ def set_file_name(filename, is_blog):
 		filename = filename.split("-")[0]
 		filename = filename.split("_")[0]
 	return filename
+
+def get_path_for_lan(lan, section=None, subsection=None):
+	if not section is None and subsection is None:
+		return ABSOLUTE_URL + "/" + lan + "/" + set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog')
+	elif not section is None and not subsection is None:
+		return ABSOLUTE_URL + "/" + lan + "/" + set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog') + "/" + set_file_name(subsection['title_' + lan], subsection['title_en'].lower() == 'blog')
+	else:
+		return ABSOLUTE_URL + "/" + lan + "/" + INDEX_FILE_NAME
+
+def return_url_for_environment(levels_up, path):
+	if IS_PRODUCTION:
+		return ABSOLUTE_URL + path
+	else:
+		return levels_up + path
 
 def clean_html_files():
 	for file in Path(WEB_FOLDER_NAME).rglob('*.html'):
