@@ -4,13 +4,14 @@ import shutil
 import re
 from pathlib import Path
 
-ABSOLUTE_URL = 'https://www.mvarona.dev/'
+ABSOLUTE_URL = 'https://www.mariovarona.dev/'
 ONE_DIR_UP = '../'
 TWO_DIRS_UP = '../../'
 COMPONENTS_FOLDER_NAME = 'components'
 COMPONENTS_HTML_FOLDER_NAME = 'html'
 PATH_SEPARATOR = os.path.sep
 STATIC_FOLDERS = ['css', 'images', 'js']
+LEGAL_FILES = ['tos.html', 'privacy.html']
 INDEX_FILE_NAME = 'index.html'
 SECTION_FILE_NAME = 'section.html'
 SUBSECTION_FILE_NAME = 'subsection.html'
@@ -44,6 +45,15 @@ def create_index_for_lans(lans, json_file):
 		shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + INDEX_FILE_NAME, index_path)
 		populate_independent_vars(index_path, json_file, lan)
 		populate_header(index_path, json_file, lan)
+
+def create_legal_files():
+	for legal_file in LEGAL_FILES:
+
+		legal_path = WEB_FOLDER_NAME + PATH_SEPARATOR + legal_file
+		
+		shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + legal_file, legal_path)
+		populate_independent_vars(legal_path, json_file, 'es')
+		populate_header(legal_path, json_file, 'es')
 
 def create_sections_for_lans(lans, json_file):
 	for lan in lans:
@@ -474,4 +484,5 @@ if __name__=="__main__":
 	create_folders_for_lans(lans)
 	create_index_for_lans(lans, json_file)
 	create_sections_for_lans(lans, json_file)
+	create_legal_files()
 	clean_html_files()
