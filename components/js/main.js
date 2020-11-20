@@ -177,9 +177,25 @@ function animateNumbers(){
 
 function detectLanguage(){
 	let userLang = navigator.language || navigator.userLanguage;
-	let enDetected = "We think we have a better version for you! <a href='https://www.mariovarona.dev/en/index'>Read this site in English</a>";
-	let esDetected = "¡Creemos que tenemos una mejor versión para ti! <a href='https://www.mariovarona.dev/en/index'>Lee este sitio en español</a>";
-	let deDetected = "Wir denken, wir haben eine bessere Version für dich! <a href='https://www.mariovarona.dev/en/index'>Lies diese Seite auf Deutsch</a>";
+
+	var enURL;
+	var esURL;
+	var deURL;
+
+	let navLinks = document.querySelectorAll('a.nav-link');
+	navLinks.forEach(link => {
+		if (link.innerHTML.toLowerCase() == "en"){
+			enURL = link.href;
+		} else if (link.innerHTML.toLowerCase() == "de"){
+			deURL = link.href;
+		} else if (link.innerHTML.toLowerCase() == "es"){
+			esURL = link.href;
+		}
+	});
+
+	let enDetected = "We think we have a better version for you! <a href='" + enURL + "'>Read this site in English</a>";
+	let esDetected = "¡Creemos que tenemos una mejor versión para ti! <a href='" + esURL + "'>Lee este sitio en español</a>";
+	let deDetected = "Wir denken, wir haben eine bessere Version für dich! <a href='" + deURL + "'>Lies diese Seite auf Deutsch</a>";
 
 	let enLegalDetected = "We are sorry, the only legally binding version of these terms is the Spanish one";
 	let deLegalDetected = "Es tut uns leid, die einzige rechtsverbindliche Version dieser Bedingungen ist die spanische";
@@ -189,7 +205,7 @@ function detectLanguage(){
 	let urlParams = new URLSearchParams(queryString);
 	let warning = document.querySelector('#lan-alert');
 	let newElement = document.createElement('span');
-	
+
 	if (url.includes('/tos') || url.includes('/privacy')){
 
 		if (urlParams.get('lan') == 'de'){

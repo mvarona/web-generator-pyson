@@ -4,7 +4,7 @@ import shutil
 import re
 from pathlib import Path
 
-ABSOLUTE_URL = 'https://www.mariovarona.dev/'
+ABSOLUTE_URL = 'https://www.mariovarona.dev'
 ONE_DIR_UP = '../'
 TWO_DIRS_UP = '../../'
 COMPONENTS_FOLDER_NAME = 'components'
@@ -163,7 +163,11 @@ def populate_header(file, json_file, active_lan, section=None, subsection=None):
 					component_content = c.read()
 					component_content = component_content.replace('$section', name_section)
 					section_path = set_file_name(name_section, section_json['title_en'].lower() == 'blog')
-					component_content = component_content.replace('$path_section', section_path)
+					
+					if filename.lower() in " ".join(LEGAL_FILES):
+						component_content = component_content.replace('$path_section', active_lan + "/" + section_path)
+					else:
+						component_content = component_content.replace('$path_section', section_path)
 
 					if section is None and subsection is None:
 						component_content = component_content.replace('$dropdown_section_active', '')
