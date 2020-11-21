@@ -277,11 +277,11 @@ def populate_section(file, json_file, active_lan, active_section):
 					with open(component_section_cards_mosaic_path, 'r+') as c:
 						component_content = c.read()
 						component_content = component_content.replace('$stat1', str(active_section['data']['stat1']))
-						component_content = component_content.replace('$stat1_text', active_section['data']['stat1_text_' + active_lan])
+						component_content = component_content.replace('$text_stat1', active_section['data']['text_stat1_' + active_lan])
 						component_content = component_content.replace('$stat2', str(active_section['data']['stat2']))
-						component_content = component_content.replace('$stat2_text', active_section['data']['stat2_text_' + active_lan])
+						component_content = component_content.replace('$text_stat2', active_section['data']['text_stat2_' + active_lan])
 						component_content = component_content.replace('$stat3', str(active_section['data']['stat3']))
-						component_content = component_content.replace('$stat3_text', active_section['data']['stat3_text_' + active_lan])
+						component_content = component_content.replace('$text_stat3', active_section['data']['text_stat3_' + active_lan])
 						component_content = component_content.replace('$last_update', active_section['data']['last_update_' + active_lan])
 
 						card_img_template = ''

@@ -81,18 +81,40 @@ main {
 	text-align: center;
 }
 
-div#highlights {
+div#section-highlights {
 	width: 150%;
 	margin-top: 7vh;
 }
 
-div#highlights span.number {
+div#section-highlights span.number {
 	font-size: 300%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
-div#highlights span.item {
+div#section-highlights span.item {
 	font-size: 110%;
-	padding-left: 5px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#section-mosaic {
+	margin-top: 3rem;
+}
+
+div#section-mosaic a[href="''"] {
+	cursor: default!important;
+}
+
+div#section-mosaic a {
+	line-height: 30px!important;
+}
+
+div#section-mosaic p.card-text small {
+	text-align: center;
 }
 
 section {
