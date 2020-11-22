@@ -121,7 +121,7 @@
 					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
-					"body_en": "iOS foundations for iPhone y iPad - KeepCoding<br/>Advanced iOS programming - KeepCoding<br/>Swift 3.0 foundations - KeepCoding<br/>Artificial Intelligence Foundations. Machine learning and neural networks - University of Salamanca<br/><br/>Naming strategies: Naming your brand - Crehana<br/>A technological vision for business people - Udemy<br/>Android programming from scratch - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy",
+					"body_en": "iOS foundations for iPhone and iPad - KeepCoding<br/>Advanced iOS programming - KeepCoding<br/>Swift 3.0 foundations - KeepCoding<br/>Artificial Intelligence Foundations. Machine learning and neural networks - University of Salamanca<br/><br/>Naming strategies: Naming your brand - Crehana<br/>A technological vision for business people - Udemy<br/>Android programming from scratch - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy",
 					"body_es": "Fundamentos iOS para iPhone y iPad - KeepCoding<br/>Programación iOS avanzada - KeepCoding<br/>Fundamentos Swift 3.0 - KeepCoding<br/>Introducción a la Inteligencia Artificial. Aprendizaje automático y redes neuronales - Universidad de Salamanca<br/>Estrategias de Naming: Dándole un nombre a tu marca - Crehana<br/>Una visión tecnológica para gente de negocio - Udemy<br/>Programación Android desde cero - KeepCoding<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy",
 					"body_de": "iOS-Grundlagen für iPhone und iPad - KeepCoding<br/>Fortgeschrittene iOS-Programmierung - KeepCoding<br/>Swift 3.0 grundlagen - KeepCoding<br/>Grundlagen der künstlichen Intelligenz. Maschinelles Lernen und neuronale Netze - Universität Salamanca<br/><br/>Benennungsstrategien: Ihre Marke benennen - Crehana<br/>Eine technologische Vision für Geschäftsleute - Udemy<br/>Android-Programmierung von Grund auf neu - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy"
 				},
@@ -1184,6 +1184,66 @@
 							"img_description_de": ""
 						}
 					]
+				},
+				{
+					"img": "images/projects/logo_mariovarona.png",
+					"alt_en": "Project logo",
+					"alt_es": "Logo del proyecto",
+					"alt_de": "Projektlogo",
+					"title_en": "MarioVarona",
+					"title_es": "MarioVarona",
+					"title_de": "MarioVarona",
+					"meta_title_en": "MarioVarona - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_es": "MarioVarona - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_de": "MarioVarona - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"body_en": "(2020 - ...)<br/>Personal website developed from scratch with a modular approach in which the components are dynamically built based on a JSON file through a Python script. Open source project hosted by GitHub Pages.",
+					"body_es": "(2020 - ...)<br/>Sitio web personal desarrollado desde cero con un enfoque modular en el que los componentes se construyen dinámicamente en base a un archivo JSON a través de un script en Python. Proyecto open source alojado en GitHub Pages.",
+					"body_de": "(2020 - ...)<br/>Persönliche Website, die von Grund auf mit einem modularen Ansatz entwickelt wurde, bei dem die Komponenten dynamisch auf der Grundlage einer JSON-Datei durch ein Python-Skript aufgebaut werden. Open-Source-Projekt auf den GitHub Pages gehostet.",
+					"link1": "https://mariovarona.dev",
+					"text_link1_en": "Go to site",
+					"text_link1_es": "Ir al sitio",
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/mariovarona_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "Startseite",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "Startseite",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/mariovarona_2.png",
+							"alt_en": "Section",
+							"alt_es": "Sección",
+							"alt_de": "Abschnitt",
+							"img_title_en": "Section",
+							"img_title_es": "Sección",
+							"img_title_de": "Abschnitt",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/mariovarona_3.png",
+							"alt_en": "Subsection",
+							"alt_es": "Subsección",
+							"alt_de": "Unterabschnitt",
+							"img_title_en": "Subsection",
+							"img_title_es": "Subsección",
+							"img_title_de": "Unterabschnitt",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				}
 			]
 		},
@@ -1425,12 +1485,12 @@
 					"alt_en": "Tools icon",
 					"alt_es": "Icono de unas herramientas",
 					"alt_de": "Werkzeug-Symbol",
-					"title_en": "Create a static web from json with Python",
-					"title_es": "Crear una web estática desde json con Python",
-					"title_de": "Eines statischen Webs aus json mit Python erstellen",
-					"meta_title_en": "Create a static web from json with Python - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
-					"meta_title_es": "Crear una web estática desde json con Python - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
-					"meta_title_de": "Eines statischen Webs aus json mit Python erstellen - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"title_en": "Create a static web from JSON with Python",
+					"title_es": "Crear una web estática desde JSON con Python",
+					"title_de": "Eines statischen Webs aus JSON mit Python erstellen",
+					"meta_title_en": "Create a static web from JSON with Python - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_es": "Crear una web estática desde JSON con Python - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
+					"meta_title_de": "Eines statischen Webs aus JSON mit Python erstellen - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
@@ -1480,7 +1540,7 @@
 	"courses_string_en": "Courses",
 	"courses_string_de": "Kurse",
 	"universities_count": 4,
-	"$profil_alt_en": "Profile image",
-	"$profil_alt_es": "Imagen de perfil",
-	"$profil_alt_de": "Profil-Bild"
+	"profil_alt_en": "Profile image",
+	"profil_alt_es": "Imagen de perfil",
+	"profil_alt_de": "Profil-Bild"
 }
