@@ -350,20 +350,17 @@ def populate_subsection(file, json_file, active_lan, active_subsection):
 
 			links_component = links_component.replace('$subsection_link_1', active_subsection['link1'])
 			links_component = links_component.replace('$subsection_link_text_1', active_subsection['text_link1_' + active_lan])
-			links_component = links_component.replace('$hidden2', 'd-none')
-			links_component = links_component.replace('$hidden3', 'd-none')
+			links_component = links_component.replace('hidden1', '')
 
 		if 'link2' in active_subsection:
 			links_component = links_component.replace('$subsection_link_2', active_subsection['link2'])
 			links_component = links_component.replace('$subsection_link_text_2', active_subsection['text_link2_' + active_lan])
-			links_component = links_component.replace('$hidden2', '')
-			links_component = links_component.replace('$hidden3', 'd-none')
+			links_component = links_component.replace('hidden2', '')
 
 		if 'link3' in active_subsection:
 			links_component = links_component.replace('$subsection_link_3', active_subsection['link3'])
 			links_component = links_component.replace('$subsection_link_text_3', active_subsection['text_link3_' + active_lan])
-			links_component = links_component.replace('$hidden3', 'd-none')
-			
+			links_component = links_component.replace('hidden3', '')
 
 		file_content = replace_text_in_file(f, file_content, '{$subsection_links}', links_component)
 
