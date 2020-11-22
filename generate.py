@@ -10,7 +10,8 @@ TWO_DIRS_UP = '../../'
 COMPONENTS_FOLDER_NAME = 'components'
 COMPONENTS_HTML_FOLDER_NAME = 'html'
 PATH_SEPARATOR = os.path.sep
-STATIC_FOLDERS = ['css', 'images', 'js']
+STATIC_FOLDERS = ['css', 'images', 'js', 'static']
+STATIC_FOLDER_WHOSE_FILES_ARE_GLOBAL = 'static'
 LEGAL_FILES = ['tos.html', 'privacy.html']
 INDEX_FILE_NAME = 'index.html'
 SECTION_FILE_NAME = 'section.html'
@@ -31,11 +32,15 @@ def create_folders_for_lans(lans):
 		os.makedirs(dir)
 
 		for folder in STATIC_FOLDERS:
-			try:
-				shutil.copytree(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + folder, WEB_FOLDER_NAME + PATH_SEPARATOR + folder) 
-			except OSError as err:
-				if err.errno != 17:
-					print("Error:", e)
+			if 'static' not in folder:
+				try:
+					shutil.copytree(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + folder, WEB_FOLDER_NAME + PATH_SEPARATOR + folder) 
+				except OSError as err:
+					if err.errno != 17:
+						print("Error:", err)
+
+	for file in os.listdir(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + STATIC_FOLDER_WHOSE_FILES_ARE_GLOBAL):
+		shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + STATIC_FOLDER_WHOSE_FILES_ARE_GLOBAL + PATH_SEPARATOR + file, WEB_FOLDER_NAME + PATH_SEPARATOR + file)				
 
 def create_index_for_lans(lans, json_file):
 	for lan in lans:
@@ -50,8 +55,7 @@ def create_legal_files():
 	for legal_file in LEGAL_FILES:
 
 		legal_path = WEB_FOLDER_NAME + PATH_SEPARATOR + legal_file
-		
-		shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + legal_file, legal_path)
+
 		populate_independent_vars(legal_path, json_file, 'es')
 		populate_header(legal_path, json_file, 'es')
 
