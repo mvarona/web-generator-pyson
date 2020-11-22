@@ -11,6 +11,13 @@ html, body {
 	height: 100%;
 }
 
+div.company_logo img {
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+}
+
 .text, p {
 	font-weight: 300;
 	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;

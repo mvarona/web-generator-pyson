@@ -1479,5 +1479,8 @@
 	"courses_string_en": "Courses",
 	"courses_string_en": "Courses",
 	"courses_string_de": "Kurse",
-	"universities_count": 4
+	"universities_count": 4,
+	"$profil_alt_en": "Profile image",
+	"$profil_alt_es": "Imagen de perfil",
+	"$profil_alt_de": "Profil-Bild"
 }
