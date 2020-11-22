@@ -272,6 +272,10 @@ section#subsection div.subsection-links {
 	margin-bottom: 1rem;
 }
 
+section#subsection div.subsection-links .hidden1, section#subsection div.subsection-links .hidden2, section#subsection div.subsection-links .hidden3 {
+	display: none;
+} 
+
 section#subsection div.subsection-links a {
 	font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
@@ -282,9 +286,9 @@ section#subsection div.subsection-gallery {
 }
 
 section#subsection div.subsection-gallery div.card img {
-	width: 100%;
-	height: 100%;
+	height: 14rem;
 	padding: 1rem;
+	object-fit: contain;
 }
 
 section#subsection div.subsection-gallery div.card:hover {
@@ -298,6 +302,7 @@ section#subsection div#gallery-modal .modal-dialog {
 
 section#subsection div#gallery-modal .carousel-caption {
 	background-color: rgba(20,23,25,.6);
+	padding-top: 8px;
 }
 
 section#subsection div#gallery-modal img {
