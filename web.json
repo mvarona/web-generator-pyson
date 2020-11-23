@@ -69,7 +69,7 @@
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"body_en": "Computer Science Degree - University of Salamanca<br/>2017 – 2021<br/><br/>Average degree grade: 8.06/10 (3.03/4 GPA) (as of September 2020).<br/>Member of the ACM USAL chapter since 2018.<br/>Bachelor thesis: Integral system to make on-board payments on public transport with and without NFC, platform to manage it, environment to test it, app to calculate avoided CO2 and platform to notify user.",
 					"body_es": "Grado en Ingeniería Informática - Universidad de Salamanca<br/>2017 - 2021<br/><br/>Nota media en grado: 8,06 (a fecha de septiembre de 2020).<br/>Miembro del chapter ACM USAL desde 2018.<br/>TFG: Sistema integral para pago de billetes en el transporte público con y sin NFC, plataforma que lo gestiona, entorno para probar su funcionamiento, app que calcula CO2 evitado y plataforma que notifica al usuario.",
-					"body_de": "Hochschulabschluss in Informatik - Universität Salamanca<br/>2017 - 2021<br/><br/>Durchschnittsnote: 8.06/10 (~ 2,1 Deutsche Note) (Stand: September 2020).<br/>Mitglied des ACM USAL-Kapitels seit 2018.<br/>Bachelorarbeit: Integrales System zur Durchführung von Zahlungen an Bord von öffentlichen Verkehrsmitteln mit und ohne NFC, Plattform zur Verwaltung, Umgebung zum Testen, App zur Berechnung von vermiedene CO2 und Plattform zur Benachrichtigung der Benutzer."
+					"body_de": "Hochschulabschluss in Informatik - Universität Salamanca<br/>2017 - 2021<br/><br/>Durchschnittsnote: 8,06/10 (~ 2,1 Deutsche Note) (Stand: September 2020).<br/>Mitglied des ACM USAL-Kapitels seit 2018.<br/>Bachelorarbeit: Integrales System zur Durchführung von Zahlungen an Bord von öffentlichen Verkehrsmitteln mit und ohne NFC, Plattform zur Verwaltung, Umgebung zum Testen, App zur Berechnung von vermiedene CO2 und Plattform zur Benachrichtigung der Benutzer."
 				},
 				{
 					"img": "images/germany.png",
@@ -121,9 +121,9 @@
 					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
-					"body_en": "iOS foundations for iPhone and iPad - KeepCoding<br/>Advanced iOS programming - KeepCoding<br/>Swift 3.0 foundations - KeepCoding<br/>Artificial Intelligence Foundations. Machine learning and neural networks - University of Salamanca<br/><br/>Naming strategies: Naming your brand - Crehana<br/>A technological vision for business people - Udemy<br/>Android programming from scratch - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy",
+					"body_en": "iOS foundations for iPhone and iPad - KeepCoding<br/>Advanced iOS programming - KeepCoding<br/>Swift 3.0 foundations - KeepCoding<br/>Artificial Intelligence Foundations. Machine learning and neural networks - University of Salamanca<br/>Naming strategies: Naming your brand - Crehana<br/>A technological vision for business people - Udemy<br/>Android programming from scratch - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy",
 					"body_es": "Fundamentos iOS para iPhone y iPad - KeepCoding<br/>Programación iOS avanzada - KeepCoding<br/>Fundamentos Swift 3.0 - KeepCoding<br/>Introducción a la Inteligencia Artificial. Aprendizaje automático y redes neuronales - Universidad de Salamanca<br/>Estrategias de Naming: Dándole un nombre a tu marca - Crehana<br/>Una visión tecnológica para gente de negocio - Udemy<br/>Programación Android desde cero - KeepCoding<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy",
-					"body_de": "iOS-Grundlagen für iPhone und iPad - KeepCoding<br/>Fortgeschrittene iOS-Programmierung - KeepCoding<br/>Swift 3.0 grundlagen - KeepCoding<br/>Grundlagen der künstlichen Intelligenz. Maschinelles Lernen und neuronale Netze - Universität Salamanca<br/><br/>Benennungsstrategien: Ihre Marke benennen - Crehana<br/>Eine technologische Vision für Geschäftsleute - Udemy<br/>Android-Programmierung von Grund auf neu - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy"
+					"body_de": "iOS-Grundlagen für iPhone und iPad - KeepCoding<br/>Fortgeschrittene iOS-Programmierung - KeepCoding<br/>Swift 3.0 grundlagen - KeepCoding<br/>Grundlagen der künstlichen Intelligenz. Maschinelles Lernen und neuronale Netze - Universität Salamanca<br/>Benennungsstrategien: Ihre Marke benennen - Crehana<br/>Eine technologische Vision für Geschäftsleute - Udemy<br/>Android-Programmierung von Grund auf neu - KeepCoding<br/>The Complete 2020 Web Development Bootcamp - Dr. Angela Yu, London App Brewery - Udemy<br/>Complete 2020 Data Science & Machine Learning Bootcamp - Philipp Muellauer, Dr. Angela Yu, London App Brewery - Udemy"
 				},
 				{
 					"img": "images/plus.png",
@@ -634,7 +634,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/burndownchartist_4.png",
+							"img": "images/projects/burndownchartist_4.jpg",
 							"alt_en": "BurndownChart with Todoist tasks",
 							"alt_es": "BurndownChart con tareas de Todoist",
 							"alt_de": "BurndownChart mit Todoist-Aufgaben",
@@ -1026,7 +1026,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/alexia_3.png",
+							"img": "images/projects/alexia_3.jpg",
 							"alt_en": "Calendar",
 							"alt_es": "Calendar",
 							"alt_de": "Kalender",
@@ -1038,7 +1038,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/alexia_4.png",
+							"img": "images/projects/alexia_4.jpg",
 							"alt_en": "Grades",
 							"alt_es": "Calificaciones",
 							"alt_de": "Noten",
@@ -1050,7 +1050,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/alexia_5.png",
+							"img": "images/projects/alexia_5.jpg",
 							"alt_en": "Messages",
 							"alt_es": "Comunicados",
 							"alt_de": "Mitteilungen",
@@ -1062,7 +1062,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/alexia_7.png",
+							"img": "images/projects/alexia_7.jpg",
 							"alt_en": "Message",
 							"alt_es": "Comunicado",
 							"alt_de": "Mitteilung",
@@ -1074,7 +1074,7 @@
 							"img_description_de": ""
 						},
 						{
-							"img": "images/projects/alexia_6.png",
+							"img": "images/projects/alexia_6.jpg",
 							"alt_en": "Incidents",
 							"alt_es": "Incidencias",
 							"alt_de": "Vorfälle",
@@ -1365,7 +1365,7 @@
 						"href": "''",
 						"title_en": "Average degree grade: 8.06/10 (3.03/4 GPA)",
 						"title_es": "Nota media de grado: 8,06",
-						"title_de": "Durchschnittsnote: 8.06/10 (~ 2,1 Deutsche Note)",
+						"title_de": "Durchschnittsnote: 8,06/10 (~ 2,1 Deutsche Note)",
 						"subtitle_en": "Grade obtained on the Computer Science degree at the University of Salamanca",
 						"subtitle_es": "Nota obtenida en el grado en Ingeniería Informática en la Universidad de Salamanca",
 						"subtitle_de": "Abschluss in Informatik an der Universität Salamanca",
@@ -1503,7 +1503,7 @@
 					"alt_en": "Tools icon",
 					"alt_es": "Icono de unas herramientas",
 					"alt_de": "Werkzeug-Symbol",
-					"title_en": "Create a static web from JSON with Python",
+					"title_en": "Creating a static web from JSON with Python",
 					"title_es": "Crear una web estática desde JSON con Python",
 					"title_de": "Eines statischen Webs aus JSON mit Python erstellen",
 					"meta_title_en": "Create a static web from JSON with Python - Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
@@ -1512,12 +1512,9 @@
 					"meta_description_en": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_es": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
 					"meta_description_de": "Mario Varona - Mobile & Full Web Stack Engineer - Computer & Data Scientist",
-					"date_en": "11/22/2020",
-					"date_es": "22/11/2020",
-					"date_de": "22.11.2020",
-					"body_en": "-",
-					"body_es": "-",
-					"body_de": "-"
+					"body_en": "</p><p>Web development is going through a very exciting time. It is perhaps one of the best representatives of how fast and dynamic the technological world is, and in recent years it has not stopped experiencing strong changes. From a development more based on auxiliary tools to Javascript, like jQuery, only for the front-end, we have gone in less than 5 years to a very established use of native Javascript, Typescript or other frameworks that did not exist recently, like React, Angular, Vanilla or Vue. Now it is possible to develop a complete project with Javascript: With native on the front-end and with NodeJS on the back-end. The power of this combination of technologies, together with platforms and software as a service (PaaS and SaaS), to simplify development, have an agile approach from the core and democratize the process of creating Web solutions is huge.</p><br/><p>It is certainly a world where it is difficult to keep pace, so lifelong learning is essential. In this context, I recently wanted to improve my React bases with a <a href='../education/courses'>Web development course</a> that included it, and I had the opportunity to deepen in its use and in the use of EJS as Embedded Javascript Templating. As the best way to acquire knowledge is applying it, I knew that the next Web project I wanted to do -this site- had to use components.</p><br/><h2>But then... Why not React?</h2><br/><p>And where I say React, I could say any other framework. Basically, I considered that this project was not the most suitable for them. They are solutions that are better designed for Single-Page Apps architecture, instead of a mainly static, occasionally updated and size-controlled website. But the fact that it is not a scenario as suitable for React as <a href='../experience/burndownchartist'>BurndownChartist</a>, does not imply that it is not convenient to use a modular approach. The next logical step would have been to use EJS. However, after careful analysis, I estimated that multilingualism or the quality of SEO positioning could be an important point. I needed a solution that would allow me to create a static website from a JSON file, that would allow me to have total control over the style, architecture and HTML content, that would allow me to manipulate a great interaction with Javascript and that would combine great flexibility with convenience in maintenance, an important requirement given the three languages I planned to support. I found some things in GitHub, mainly limited CMSs, but none of them met my needs or were as powerful as I needed. So I decided to create my own ad-hoc solution. And here it is.</p><br/><h2>MarioVarona.dev: The site created by a CMS with Python and JSON.</h2><br/><p>In the <a target='_blank' href='https://github.com/mvarona/mvarona.github.io'>repository of this site</a> you can find everything I used to create a website from scratch, without external templates, with great flexibility and great maintenance capacity. You only need a JSON file, the HTML, CSS and JS template files, which must be in the <code>components</code> directory, and the <code>generate.py</code> file does the magic. When compiled, it creates the necessary files in a folder called <code>web</code>, replacing the blocks marked with <code>{$name}</code> by a block created at compile time, the strings <code>$string</code> by their corresponding translation, and more. In addition, it allows you to inject HTML directly from the JSON file, so the flexibility is great. To try it you just have to provide your <code>web.json</code> and compile the file with <code>python3 generate.py</code>.</p><p>I encourage you to clone the project and show me the webs you can do with a CMS as simple, fast and flexible as this one!</p><br/><p>Note: Some parts of the generator (generate.py) are specifically designed to create this particular website and its use in other cases is dispensable.</p><br/><span><small>11/23/2020</small></span>",
+					"body_es": "</p><p>El desarrollo Web vive un momento muy emocionante. Es quizás uno de los mejores representantes de lo rápido y dinámico que es el mundo tecnológico, y en los últimos años no ha parado de experimentar fuertes cambios. De un desarrollo más basado en herramientas auxiliares a Javascript, como jQuery, sólo para el front-end, hemos pasado en menos de 5 años a un uso muy extendido de Javascript nativo, Typescript u otros frameworks que hace muy poco no existían, como React, Angular, Vanilla o Vue. Ahora es posible desarrollar un proyecto completo con Javascript: Con nativo en el front-end y con NodeJS en el back-end. El poder que tiene esta combinación de tecnologías, junto a las plataformas y software como servicio (PaaS y SaaS), para simplificar el desarrollo, agilizar y democratizar el proceso de creación de soluciones Web es enorme.</p><br/><p>Es sin duda un mundo donde es difícil mantenerse al día, por eso la formación continua es imprescindible. En este marco, recientemente he querido mejorar mis bases de React con un <a href='../formacion/cursos'>curso de desarrollo Web</a> que lo incluía, y he tenido la oportunidad de poder profundizar en su uso y en el de EJS como Embedded Javascript Templating. Como la mejor forma de adquirir conocimientos es aplicándolos, sabía que el siguiente proyecto Web que quería realizar –este sitio– tenía que utilizar componentes.</p><br/><h2>Pero entonces... ¿Por qué no React?</h2><br/><p>Y quien dice React dice cualquier otro framework. Fundamentalmente consideré que no era este el proyecto más indicado para ellos. Son soluciones que se adaptan mejor a una arquitectura de Single-Page Apps, y no a un sitio web fundamentalmente estático, actualizado ocasionalmente y de tamaño controlado. Pero que no sea un escenario tan adecuado a React como <a href='../experiencia/burndownchartist'>BurndownChartist</a>, no implica que no sea conveniente utilizar un desarrollo modular. El siguiente paso lógico habría sido usar EJS. Sin embargo, después de analizarlo detenidamente, estimé que el multilingüismo o la calidad del posicionamiento SEO podrían ser puntos conflictivos. Necesitaba una solución que me permitiera crear un sitio web estático desde un archivo JSON, que pudiera tener total control sobre el estilo, arquitectura y contenido HTML, que permitiera gran interacción con Javascript y que aunara una gran flexibilidad con conveniencia en el mantenimiento, requisito importante dados los tres idiomas que pensaba soportar. Encontré algunas cosas en GitHub, principalmente CMSs limitados, pero ninguno satisfacía mis necesidades ni era tan potente como necesitaba. Así que decidí crear mi propia solución ad-hoc. Y aquí está.</p><br/><h2>MarioVarona.dev: El sitio creado por un CMS con Python y JSON.</h2><br/><p>En el <a target='_blank' href='https://github.com/mvarona/mvarona.github.io'>repositorio de este sitio</a> se puede encontrar todo lo que he usado para crear un sitio web desde cero, sin plantillas ajenas, con gran flexibilidad y gran capacidad de mantenimiento. Sólo se necesita un archivo JSON, los HTML, CSS y JS de plantilla, que deben estar en el directorio <code>components</code>, y el archivo <code>generate.py</code> hace la magia. Al compilarlo, crea los archivos necesarios en una carpeta llamada <code>web</code>, sustituyendo los bloques señalados con <code>{$name}</code> por un bloque creado en tiempo de compilación, las cadenas <code>$string</code> por su correspondiente traducción y más. Además, permite inyectar HTML directamente desde el archivo JSON, con lo que la flexibilidad es muy grande. Para probarlo sólo tienes que aportar tu <code>web.json</code> y compilar el archivo con <code>python3 generate.py</code>.</p><p>¡Te animo a que clones el proyecto y me enseñes las webs que puedes hacer con un CMS tan sencillo, rápido y flexible como este!</p><br/><p>Nota: Algunas partes del generador (generate.py) están diseñadas específicamente para crear esta web en particular y su uso en otros casos es prescindible.</p><br/><span><small>23/11/2020</small></span>",
+					"body_de": "</p><p>Die Webentwicklung durchläuft eine sehr aufregende Zeit. Sie ist vielleicht einer der besten Vertreter dafür, wie schnell und dynamisch die technologische Welt ist, und in den letzten Jahren hat sie nicht aufgehört, starke Veränderungen zu erleben. Von einer Entwicklung, die mehr auf Hilfswerkzeugen basiert, zu Javascript, wie jQuery, nur für das Front-End, sind wir in weniger als 5 Jahren zu einer sehr etablierten Verwendung von nativem Javascript, Typescript oder anderen Frameworks übergegangen, die vor kurzem noch nicht existierten, wie React, Angular, Vanilla oder Vue. Jetzt ist es möglich, ein komplettes Projekt mit Javascript zu entwickeln: Mit nativem auf dem Front-End und mit NodeJS auf dem Back-End. Die Stärke dieser Kombination von Technologien, zusammen mit Plattformen und Software as a Service (PaaS und SaaS), um die Entwicklung zu vereinfachen, einen agilen Ansatz vom Kern her zu verfolgen und den Prozess der Erstellung von Web-Lösungen zu demokratisieren, ist enorm.</p><br/><p>Es ist sicherlich eine Welt, in der es schwierig ist, Schritt zu halten, daher ist lebenslanges Lernen unerlässlich. In diesem Zusammenhang wollte ich vor kurzem meine React-Grundlagen mit einem <a href='../ausbildung/kurse'>Web-Entwicklungskurs</a> verbessern, der diesen Kurs beinhaltete, und ich hatte die Gelegenheit, seine Anwendung und den Einsatz von EJS als Embedded Javascript Templating zu vertiefen. Da der beste Weg, sich Wissen anzueignen, die Anwendung ist, wusste ich, dass das nächste Webprojekt, das ich machen wollte -diese Website- Komponenten verwenden musste.</p><br/><h2>Aber dann... Warum nicht React?</h2><br/><p>Und wo ich React sage, könnte ich jeden anderen Frameworks nennen. Im Grunde war ich der Meinung, dass dieses Projekt für sie nicht das geeignetste war. Es handelt sich um Lösungen, die besser für die Single-Page-Apps-Architektur ausgelegt sind, statt einer hauptsächlich statischen, gelegentlich aktualisierten und größengesteuerten Website. Aber die Tatsache, dass es sich nicht um ein Szenario handelt, das für React so geeignet ist wie <a href='../erfahrung/burndownchartist'>BurndownChartist</a>, bedeutet nicht, dass es nicht zweckmäßig wäre, einen modularen Ansatz zu verwenden. Der nächste logische Schritt wäre die Verwendung von EJS gewesen. Nach sorgfältiger Analyse schätzte ich jedoch ein, dass die Mehrsprachigkeit oder die Qualität der SEO-Positionierung ein wichtiger Punkt sein könnte. Ich brauchte eine Lösung, die es mir ermöglichen würde, eine statische Website aus einer JSON-Datei zu erstellen, die es mir erlauben würde, die totale Kontrolle über Stil, Architektur und HTML-Inhalt zu haben, die es mir erlauben würde, eine großartige Interaktion mit Javascript zu manipulieren und die eine große Flexibilität mit einer bequemen Wartung kombinieren würde, eine wichtige Anforderung angesichts der drei Sprachen, die ich zu unterstützen plante. Ich fand einige Dinge in GitHub, hauptsächlich eingeschränkte CMS, aber keines davon entsprach meinen Bedürfnissen oder war so leistungsfähig, wie ich es brauchte. Also beschloss ich, meine eigene Ad-hoc-Lösung zu erstellen. Und hier ist sie.</p><br/><h2>MarioVarona.dev: Die Website wurde mit einem CMS mit Python und JSON erstellt.</h2><br/><p>Im <a target='_blank' href='https://github.com/mvarona/mvarona.github.io'>Repository dieser Website</a> finden Sie alles, was ich verwendet habe, um eine Website von Grund auf neu zu erstellen, ohne externe Vorlagen, mit großer Flexibilität und großer Wartungskapazität. Sie brauchen nur eine JSON-Datei, die HTML-, CSS- und JS-Template-Dateien, die sich im Verzeichnis <code>components</code> befinden müssen, und die Datei <code>generate.py</code> macht den Zauber. Nach der Kompilierung erzeugt sie die notwendigen Dateien in einem Verzeichnis namens <code>web</code> und ersetzt die mit <code>{$name}</code> markierten Blöcke durch einen zur Kompilierungszeit erstellten Block, die Zeichenketten <code>$string</code> durch ihre entsprechende Übersetzung und vieles mehr. Darüber hinaus erlaubt es Ihnen, HTML direkt aus der JSON-Datei zu injizieren, so dass die Flexibilität groß ist. Um es auszuprobieren, müssen Sie nur Ihren <code>web.json</code> angeben und die Datei mit <code>python3 generate.py</code> kompilieren.</p><p>Ich möchte Sie ermutigen, das Projekt zu klonen und mir die Webseiten zu zeigen, die Sie mit einem so einfachen, schnellen und flexiblen CMS wie diesem erstellen können!</p><br/><p>Hinweis: Einige Teile des Generators (generate.py) sind speziell für die Erstellung dieser speziellen Website konzipiert und ihre Verwendung in anderen Fällen ist entbehrlich.</p><br/><span><small>23.11.2020</small></span>"
 				}
 			]
 		}
