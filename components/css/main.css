@@ -93,6 +93,11 @@ div#section-highlights, div#highlights {
 	margin-top: 7vh;
 }
 
+div#section-highlights div.row {
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
+
 div#section-highlights span.number, div#highlights span.number {
 	font-size: 300%;
 	margin-left: auto;
