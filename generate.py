@@ -109,7 +109,7 @@ def populate_independent_vars(file, json_file, lan):
 				file_content = file_content.replace('$lan', lan)
 
 			if '$projects_count' in file_content:
-				file_content = file_content.replace('$projects_count', str(count_subsections('projects', json_file)))
+				file_content = file_content.replace('$projects_count', str(count_subsections('experience', json_file)))
 
 			if '$skills_count' in file_content:
 				file_content = file_content.replace('$skills_count', str(count_subsections('skills', json_file)))
