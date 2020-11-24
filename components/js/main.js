@@ -28,7 +28,7 @@ function setUpScrollEffect(){
 }
 
 function truncateMenuItems(){
-	const MAX_LENGTH = 21;
+	const MAX_LENGTH = 13;
 	const items = document.querySelectorAll(".span-wrapper a");
 	items.forEach(item => {
 		if (item.innerHTML.length > MAX_LENGTH){
@@ -211,28 +211,28 @@ function detectLanguage(){
 		if (urlParams.get('lan') == 'de'){
 			newElement.innerHTML = deLegalDetected;
 			warning.insertBefore(newElement, warning.firstChild);
-			$('#lan-alert').delay(500).slideDown();
+			$('#lan-alert').delay(600).slideDown();
 		}
 
 		if (urlParams.get('lan') == 'en'){
 			newElement.innerHTML = enLegalDetected;
 			warning.insertBefore(newElement, warning.firstChild);
-			$('#lan-alert').delay(500).slideDown();
+			$('#lan-alert').delay(600).slideDown();
 		}
 
 	} else {
 		if (userLang.includes('es') && !url.includes('es/')){
 			newElement.innerHTML = esDetected;
 			warning.insertBefore(newElement, warning.firstChild);
-			$('#lan-alert').delay(500).slideDown();
+			$('#lan-alert').delay(600).slideDown();
 		} else if (userLang.includes('de') && !url.includes('de/')){
 			newElement.innerHTML = deDetected;
 			warning.insertBefore(newElement, warning.firstChild);$('#lan-alert').show();
-			$('#lan-alert').delay(500).slideDown();
+			$('#lan-alert').delay(600).slideDown();
 		} else if (userLang.includes('en') && !url.includes('en/')){
 			newElement.innerHTML = enDetected;
 			warning.insertBefore(newElement, warning.firstChild);
-			$('#lan-alert').delay(500).slideDown();
+			$('#lan-alert').delay(600).slideDown();
 		}
 	}
 
@@ -248,5 +248,27 @@ function renderGeneralSettings(){
 }
 
 $("#lan-alert").on("click", "button.close", function() {
-	$(this).parent().slideUp(500).delay(1000).hide('slow');
+	$(this).parent().slideUp(600).delay(1000).hide('slow');
+});
+
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 500,
+    outDuration: 500,
+    linkElement: '.animsition-link',
+    loading: true,
+    loadingParentElement: 'body',
+    loadingClass: 'animsition-loading',
+    loadingInner: '',
+    timeout: true,
+    timeoutCountdown: 0,
+    onLoadEvent: true,
+    browser: [],
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
 });
