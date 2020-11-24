@@ -466,7 +466,7 @@ def get_path_for_lan(lan, section=None, subsection=None):
 
 def return_url_for_environment(levels_up, path):
 	if IS_PRODUCTION:
-		return ABSOLUTE_URL + path
+		return ABSOLUTE_URL + "/" + path
 	else:
 		return levels_up + path
 
