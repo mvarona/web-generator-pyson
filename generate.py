@@ -318,6 +318,9 @@ def populate_section(file, json_file, active_lan, active_section):
 
 					c.close()
 
+				if active_section['title_en'].lower() == 'skills':
+					file_content = replace_text_in_file(f, file_content, regex_highlights_and_cards, '')
+
 	f.close()
 
 def populate_subsection(file, json_file, active_lan, active_subsection):
