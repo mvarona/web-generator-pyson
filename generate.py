@@ -169,9 +169,9 @@ def populate_header(file, json_file, active_lan, section=None, subsection=None):
 					section_path = set_file_name(name_section, section_json['title_en'].lower() == 'blog')
 					
 					if filename.lower() in " ".join(LEGAL_FILES):
-						component_content = component_content.replace('$path_section', active_lan + "/" + section_path)
+						component_content = component_content.replace('$path_section', ABSOLUTE_URL + "/" + active_lan + "/" + section_path)
 					else:
-						component_content = component_content.replace('$path_section', section_path)
+						component_content = component_content.replace('$path_section', ABSOLUTE_URL + "/" + section_path)
 
 					if section is None and subsection is None:
 						component_content = component_content.replace('$dropdown_section_active', '')
