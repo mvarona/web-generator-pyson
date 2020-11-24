@@ -21,7 +21,7 @@ WEB_FOLDER_NAME = 'web'
 WEB_JSON_FILE_NAME = 'web.json'
 
 # TODO: Change to load absolute paths:
-IS_PRODUCTION = False
+IS_PRODUCTION = True
 
 def create_folders_for_lans(lans):
 	for lan in lans:
