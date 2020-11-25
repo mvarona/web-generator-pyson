@@ -1332,7 +1332,7 @@
 				"last_update_de": "Die Jahre decken den Zeitraum vom 01.09 bis zum 31.08 ab.<br/>Zuletzt aktualisiert am 21.11.2020",
 				"cards": [
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "88.92 trees to absorb CO2 produced last year",
 						"title_es": "88,92 árboles para absorber el CO2 producido el curso pasado",
 						"title_de": "88,92 Bäume zur Aufnahme des im letzten Jahr produzierten CO2",
@@ -1362,7 +1362,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "Average degree grade: 8.06/10 (3.03/4 GPA)",
 						"title_es": "Nota media de grado: 8,06",
 						"title_de": "Durchschnittsnote: 8,06/10 (~ 2,1 Deutsche Note)",
@@ -1392,7 +1392,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "20% more users on BMS during the second CoViD-19 wave on Spain",
 						"title_es": "20% más usuarios en BMS durante la segunda ola de CoViD-19 en España",
 						"title_de": "20% mehr Benutzer auf BMS während der zweiten CoViD-19-Welle in Spanien",
@@ -1405,7 +1405,7 @@
 						"bg_card": "bg-primary"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "Up to 15% less users on BMS during the first CoViD-19 wave on Spain",
 						"title_es": "Hasta un 15% menos de usuarios en BMS durante la primera ola de CoViD-19 en España",
 						"title_de": "Bis zu 15 % weniger Benutzer auf BMS während der ersten CoViD-19-Welle in Spanien",
@@ -1418,7 +1418,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "€44.46 invested in offset last-year CO2 tons",
 						"title_es": "44,46 € invertidos en compensar las toneladas de CO2 del curso pasado",
 						"title_de": "44,46 € in den Ausgleich von CO2-Tonnen im vergangenen Jahr investiert",
@@ -1431,7 +1431,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "Almost 3x more profit on in-app purchases on BMS on first year trimester",
 						"title_es": "Casi 3x más beneficios en compras in-app en BMS en el primer trimestre del curso",
 						"title_de": "Fast 3x mehr Gewinn bei In-App-Käufen an der BMS im ersten Kurstrimester",
@@ -1444,7 +1444,7 @@
 						"bg_card": "bg-primary"
 					},
 					{
-						"href": "''",
+						"href": "#",
 						"title_en": "Average high school scientific baccalaureate grade: 9.29/10 (3.65/4 GPA).",
 						"title_es": "Nota media en bachillerato científico: 9,29.",
 						"title_de": "Durchschnittliche Note des wissenschaftlichen Abiturs der High School: 9,29/10 (~ 1,3 Deutsche Note).",
@@ -1474,11 +1474,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
-						"img": "",
-						"alt_img_en": "",
-						"alt_img_es": "",
-						"alt_img_de": "",
+						"href": "#",
 						"title_en": "691 completed tasks with Todoist in 2014",
 						"title_es": "691 tareas completadas con Todoist en 2014",
 						"title_de": "691 erledigte Aufgaben mit Todoist im Jahr 2014 ",
@@ -1559,11 +1555,7 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "''",
-						"img": "",
-						"alt_img_en": "",
-						"alt_img_es": "",
-						"alt_img_de": "",
+						"href": "#",
 						"title_en": "3150 completed tasks with Todoist in 2015",
 						"title_es": "3150 tareas completadas con Todoist en 2015",
 						"title_de": "3150 erledigte Aufgaben mit Todoist im Jahr 2015",
@@ -1655,7 +1647,7 @@
 	"universities_string_es": "Universidades",
 	"universities_string_de": "Universitäten",
 	"courses_string_en": "Courses",
-	"courses_string_en": "Courses",
+	"courses_string_es": "Courses",
 	"courses_string_de": "Kurse",
 	"universities_count": 4,
 	"profil_alt_en": "Profile image",

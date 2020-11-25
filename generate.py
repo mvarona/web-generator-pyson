@@ -258,7 +258,7 @@ def populate_section(file, json_file, active_lan, active_section):
 						component_content = c.read()
 
 						component_content = component_content.replace('$section', name_subsection)
-						subsection_path = active_section["title_" + active_lan].lower() + "/" + set_file_name(name_subsection, active_section['title_en'].lower() == 'blog')
+						subsection_path = make_url_friendly(active_section["title_" + active_lan].lower()) + "/" + set_file_name(name_subsection, active_section['title_en'].lower() == 'blog')
 						component_content = component_content.replace('$path_section', subsection_path)
 						component_content = component_content.replace('$img_section', img_subsection)
 						component_content = component_content.replace('$alt_img_section', alt_img_subsection)
