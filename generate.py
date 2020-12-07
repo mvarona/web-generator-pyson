@@ -460,7 +460,7 @@ def get_path_for_lan(lan, section=None, subsection=None):
 	if not section is None and subsection is None:
 		return ABSOLUTE_URL + "/" + lan + "/" + set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog')
 	elif not section is None and not subsection is None:
-		return ABSOLUTE_URL + "/" + lan + "/" + set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog') + "/" + set_file_name(subsection['title_' + lan], subsection['title_en'].lower() == 'blog')
+		return ABSOLUTE_URL + "/" + lan + "/" + set_file_name(section['title_' + lan], section['title_en'].lower() == 'blog') + "/" + set_file_name(subsection['title_' + lan], section['title_en'].lower() == 'blog')
 	else:
 		return ABSOLUTE_URL + "/" + lan + "/" + INDEX_FILE_NAME
 
