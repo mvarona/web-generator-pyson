@@ -32,11 +32,14 @@ def clear_target_directory(directory):
 				print('Directory not copied. Error: %s' % e)
 		shutil.rmtree(directory)
 	os.makedirs(directory)
+
 	try:
 		shutil.copytree('git-copy', directory + PATH_SEPARATOR + '.git')
 	except shutil.Error as e:
 		print('Directory not copied. Error: %s' % e)
 	shutil.rmtree('git-copy')
+
+	shutil.copyfile('.gitignore', directory + PATH_SEPARATOR + '.gitignore')
 
 def create_folders_for_lans(lans):
 	for lan in lans:
