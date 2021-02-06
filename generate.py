@@ -12,7 +12,7 @@ COMPONENTS_HTML_FOLDER_NAME = 'html'
 PATH_SEPARATOR = os.path.sep
 STATIC_FOLDERS = ['css', 'images', 'js', 'static']
 STATIC_FOLDER_WHOSE_FILES_ARE_GLOBAL = 'static'
-LEGAL_FILES = ['tos.html', 'privacy.html']
+LEGAL_FILES = ['tos.html', 'privacy.html', '404.html']
 INDEX_FILE_NAME = 'index.html'
 SECTION_FILE_NAME = 'section.html'
 SUBSECTION_FILE_NAME = 'subsection.html'
@@ -22,6 +22,11 @@ WEB_JSON_FILE_NAME = 'web.json'
 
 # TODO: Change to load absolute paths:
 IS_PRODUCTION = True
+
+def clear_target_directory(directory):
+	if os.path.exists(directory):
+		shutil.rmtree(directory)
+	os.makedirs(directory)
 
 def create_folders_for_lans(lans):
 	for lan in lans:
@@ -484,6 +489,7 @@ def clean_html_files():
 			f.close()
 
 if __name__=="__main__":
+	clear_target_directory(WEB_FOLDER_NAME)
 	json_file = json.load(open(WEB_JSON_FILE_NAME, 'r'))
 	lans = json_file["lans"]
 	create_folders_for_lans(lans)
