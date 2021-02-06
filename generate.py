@@ -25,8 +25,18 @@ IS_PRODUCTION = True
 
 def clear_target_directory(directory):
 	if os.path.exists(directory):
+		if os.path.exists(directory + PATH_SEPARATOR + '.git'):
+			try:
+				shutil.copytree(directory + PATH_SEPARATOR + '.git', 'git-copy')
+			except shutil.Error as e:
+				print('Directory not copied. Error: %s' % e)
 		shutil.rmtree(directory)
 	os.makedirs(directory)
+	try:
+		shutil.copytree('git-copy', directory + PATH_SEPARATOR + '.git')
+	except shutil.Error as e:
+		print('Directory not copied. Error: %s' % e)
+	shutil.rmtree('git-copy')
 
 def create_folders_for_lans(lans):
 	for lan in lans:
