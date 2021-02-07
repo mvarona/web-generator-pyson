@@ -85,7 +85,7 @@ def create_sections_for_lans(lans, json_file):
 			section_path = WEB_FOLDER_NAME + PATH_SEPARATOR + lan + PATH_SEPARATOR + section_filename + '.html'
 			
 			shutil.copy(COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + SECTION_FILE_NAME, section_path)
-			
+
 			populate_independent_vars(section_path, json_file, lan)
 			populate_header(section_path, json_file, lan, section)
 			populate_section(section_path, json_file, lan, section)
@@ -254,6 +254,7 @@ def populate_section(file, json_file, active_lan, active_section):
 		file_content = replace_text_in_file(f, file_content, '$quote_section', active_section['quote_' + active_lan])
 		file_content = replace_text_in_file(f, file_content, '$author_section', active_section['quote_author_' + active_lan])
 		
+		regex_menu_featured_subsections = '{$menu_featured_subsections}'
 		regex_menu_subsections = '{$menu_subsections}'
 		regex_cards_mosaic = '{$cards_mosaic}'
 		regex_highlights_and_cards = '{$highlights_and_cards}'
@@ -264,14 +265,14 @@ def populate_section(file, json_file, active_lan, active_section):
 			component_section_card_img_mosaic_path = COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + 'section_card_img_mosaic.html'
 			component_section_card_txt_mosaic_path = COMPONENTS_FOLDER_NAME + PATH_SEPARATOR + COMPONENTS_HTML_FOLDER_NAME + PATH_SEPARATOR + 'section_card_txt_mosaic.html'
 			component_new_content = ''
-
+			featured_new_content = ''
 
 			if 'subsections' in active_section:
 				for subsection_json in active_section['subsections']:
 					name_subsection = subsection_json["title_" + active_lan]
 					img_subsection = return_url_for_environment(ONE_DIR_UP, subsection_json["img"])
 					alt_img_subsection = subsection_json["alt_" + active_lan]
-					
+
 					with open(component_menu_section_path, 'r+') as c:
 						component_content = c.read()
 
@@ -283,6 +284,13 @@ def populate_section(file, json_file, active_lan, active_section):
 
 						component_new_content = component_new_content + component_content
 
+						if 'featured' in subsection_json:
+							featured_new_content = featured_new_content + component_content
+
+				if len(featured_new_content) > 0:
+					featured_new_content = "<div class='featured'><span id='featured-span'>" + json_file['featured_' + active_lan] + "</span>" + featured_new_content + "<hr/></div><span id='all-span'>" + json_file['all_' + active_lan] + "</span>"
+
+				file_content = file_content.replace(regex_menu_featured_subsections, featured_new_content)
 				file_content = file_content.replace(regex_menu_subsections, component_new_content)
 				file_content = replace_text_in_file(f, file_content, regex_highlights_and_cards, '')
 				
@@ -334,9 +342,12 @@ def populate_section(file, json_file, active_lan, active_section):
 
 					file_content = replace_text_in_file(f, file_content, regex_highlights_and_cards, component_new_content)
 
+					file_content = replace_text_in_file(f, file_content, regex_menu_featured_subsections, '')
+
 					c.close()
 
 				if active_section['title_en'].lower() == 'skills':
+					file_content = replace_text_in_file(f, file_content, regex_menu_featured_subsections, '')
 					file_content = replace_text_in_file(f, file_content, regex_highlights_and_cards, '')
 
 	f.close()
