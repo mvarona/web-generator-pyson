@@ -1405,17 +1405,21 @@
 						"bg_card": "bg-dark"
 					},
 					{
-						"href": "#",
-						"title_en": "Almost 3x more profit on in-app purchases on BMS on first year trimester",
-						"title_es": "Casi 3x más beneficios en compras in-app en BMS en el primer trimestre del curso",
-						"title_de": "Fast 3x mehr Gewinn bei In-App-Käufen an der BMS im ersten Kurstrimester",
-						"subtitle_en": "BMS is the App for the Metropolitan Bus of Salamanca; the increase may be due to a broader in-app purchases offer",
-						"subtitle_es": "BMS es la App del Bus Metropolitano de Salamanca; el incremento puede ser debido a una mayor oferta de compras integradas",
-						"subtitle_de": "BMS ist die App für den Metropolitan Bus von Salamanca; der Anstieg könnte auf ein breiteres Angebot für In-App-Käufe zurückzuführen sein",
-						"last_update_en": "09-11/2019",
-						"last_update_es": "09-11/2020",
-						"last_update_de": "09-11.2020",
-						"bg_card": "bg-primary"
+						"href": "https://github.com/mvarona",
+						"img": "images/external.png",
+						"alt_img_en": "External link",
+						"alt_img_es": "Enlace externo",
+						"alt_img_de": "Externer Link",
+						"title_en": "13 public repositories on GitHub",
+						"title_es": "13 repositorios públicos en GitHub",
+						"title_de": "13 öffentliche Repositories auf GitHub",
+						"subtitle_en": "34 total repositories",
+						"subtitle_es": "34 repositorios totales",
+						"subtitle_de": "34 Repositories insgesamt",
+						"last_update_en": "02/2021",
+						"last_update_es": "02/2021",
+						"last_update_de": "02.2021",
+						"bg_card": "bg-dark"
 					},
 					{
 						"href": "#",
@@ -1476,6 +1480,19 @@
 						"last_update_es": "01/2020",
 						"last_update_de": "01.2020",
 						"bg_card": "bg-dark"
+					},
+					{
+						"href": "#",
+						"title_en": "Almost 3x more profit on in-app purchases on BMS on first year trimester",
+						"title_es": "Casi 3x más beneficios en compras in-app en BMS en el primer trimestre del curso",
+						"title_de": "Fast 3x mehr Gewinn bei In-App-Käufen an der BMS im ersten Kurstrimester",
+						"subtitle_en": "BMS is the App for the Metropolitan Bus of Salamanca; the increase may be due to a broader in-app purchases offer",
+						"subtitle_es": "BMS es la App del Bus Metropolitano de Salamanca; el incremento puede ser debido a una mayor oferta de compras integradas",
+						"subtitle_de": "BMS ist die App für den Metropolitan Bus von Salamanca; der Anstieg könnte auf ein breiteres Angebot für In-App-Käufe zurückzuführen sein",
+						"last_update_en": "09-11/2019",
+						"last_update_es": "09-11/2020",
+						"last_update_de": "09-11.2020",
+						"bg_card": "bg-primary"
 					},
 					{
 						"href": "https://todoist.com/review/2018/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjIzNTAxMDYsInllYXIiOjIwMTgsImp0aSI6IkxVb3pXV1lOIn0.XCpItCY5xE2g8hGFCaw7D_KfwA78Ed8uDN3KBvkUaWk",
