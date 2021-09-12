@@ -1578,6 +1578,23 @@
 				"last_update_de": "Die Jahre decken den Zeitraum vom 01.09 bis zum 31.08 ab.<br/>Zuletzt aktualisiert am 12.09.2021",
 				"cards": [
 					{
+						"href": "https://github.com/mvarona",
+						"img": "images/external.png",
+						"alt_img_en": "External link",
+						"alt_img_es": "Enlace externo",
+						"alt_img_de": "Externer Link",
+						"title_en": "15 public repositories on Github",
+						"title_es": "15 repositorios públicos en Github",
+						"title_de": "15 öffentliche Repositories auf Github",
+						"subtitle_en": "37 total repositories",
+						"subtitle_es": "37 repositorios totales",
+						"subtitle_de": "37 Repositories insgesamt",
+						"last_update_en": "09/2021",
+						"last_update_es": "09/2021",
+						"last_update_de": "09.2021",
+						"bg_card": "bg-dark"
+					},
+					{
 						"href": "http://www.mariovarona.dev/Student%20Record.pdf",
 						"img": "images/pdf.png",
 						"alt_img_en": "Open file",
@@ -1631,23 +1648,6 @@
 						"last_update_en": "09/12/2021",
 						"last_update_es": "12/09/2021",
 						"last_update_de": "12.09.2021",
-						"bg_card": "bg-dark"
-					},
-					{
-						"href": "https://github.com/mvarona",
-						"img": "images/external.png",
-						"alt_img_en": "External link",
-						"alt_img_es": "Enlace externo",
-						"alt_img_de": "Externer Link",
-						"title_en": "15 public repositories on Github",
-						"title_es": "15 repositorios públicos en Github",
-						"title_de": "15 öffentliche Repositories auf Github",
-						"subtitle_en": "37 total repositories",
-						"subtitle_es": "37 repositorios totales",
-						"subtitle_de": "37 Repositories insgesamt",
-						"last_update_en": "09/2021",
-						"last_update_es": "09/2021",
-						"last_update_de": "09.2021",
 						"bg_card": "bg-dark"
 					},
 					{
