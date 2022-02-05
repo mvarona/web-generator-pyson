@@ -662,7 +662,7 @@
 					"body_en": "(2019 - ...)<br/>Adaptation from an open source multiplayer online card game, hosted on Heroku and which is the first alternative to play the popular board game Cards Against Humanity online in Spanish.<br/>Technologies and techniques used: React, Websockets, Heroic, HTML5, CSS3.",
 					"body_es": "(2019 - ...)<br/>Adaptación de un juego online de cartas multijugador open source, alojado en Heroku y que representa la primera alternativa para jugar al popular juego de mesa Cards Against Humanity online en español.<br/>Tecnologías y técnicas usadas: React, Websockets, Heroku, HTML5, CSS3.",
 					"body_de": "(2019 - ...)<br/>Adaption eines Open-Source-Mehrspieler-Online-Kartenspiels, das auf Heroku gehostet wird und das die erste Alternative zu dem beliebten Brettspiel Cards Against Humanity online auf Spanisch ist.<br/>Verwendete Technologien und Techniken: React, Websockets, Heroku, HTML5, CSS3.",
-					"link1": "https://www.cartascontralahumanidad.es",
+					"link1": "http://www.cartascontralahumanidad.es",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
 					"text_link1_de": "Gehe auf die Webseite",
