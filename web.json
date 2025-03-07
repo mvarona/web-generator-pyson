@@ -1524,8 +1524,7 @@
 					"link1": "https://ibloodtests.com",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite",
-					"gallery": []
+					"text_link1_de": "Gehe auf die Webseite"
 				},
 				{
 					"img": "images/projects/visualbasic.png",
