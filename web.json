@@ -1609,7 +1609,45 @@
 					"meta_description_de": "Mario Varona - Mobile & Web Engineer • Big Data • Security",
 					"body_en": "2024<br/>ACM USAL Chapter",
 					"body_es": "2024<br/>ACM USAL Chapter",
-					"body_de": "2024<br/>ACM USAL Chapter"
+					"body_de": "2024<br/>ACM USAL Chapter",
+					"gallery": [
+						{
+							"img": "images/volunteering/clean_poster.jpg",
+							"alt_en": "Clean Code Talk Poster",
+							"alt_es": "Cartel de Charla de Clean Code",
+							"alt_de": "Clean Code Vortrag Poster",
+							"img_title_en": "Clean Code Talk Poster",
+							"img_title_es": "Cartel de Charla de Clean Code",
+							"img_title_de": "Clean Code Talk Poster",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/volunteering/clean_talk_1.jpg",
+							"alt_en": "Clean Code Talk at University I",
+							"alt_es": "Charla de Clean Code en la Universidad I",
+							"alt_de": "Clean Code Vortrag an der Universität I",
+							"img_title_en": "Clean Code Talk at University I",
+							"img_title_es": "Charla de Clean Code en la Universidad I",
+							"img_title_de": "Clean Code Vortrag an der Universität I",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/volunteering/clean_talk_2.jpg",
+							"alt_en": "Clean Code Talk at University II",
+							"alt_es": "Charla de Clean Code en la Universidad II",
+							"alt_de": "Clean Code Vortrag an der Universität II",
+							"img_title_en": "Clean Code Talk at University II",
+							"img_title_es": "Charla de Clean Code en la Universidad II",
+							"img_title_de": "Clean Code Vortrag an der Universität II",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
 					"img": "images/companies/salesianos.png",
@@ -1627,7 +1665,45 @@
 					"meta_description_de": "Mario Varona - Mobile & Web Engineer • Big Data • Security",
 					"body_en": "2024<br/>Salesianos Monzón, Secondary - VT<br/>Cybervolunteer at INCIBE",
 					"body_es": "2024<br/>Salesianos Monzón, ESO - FP<br/>Cibervoluntario del INCIBE",
-					"body_de": "2024<br/>Salesianos Monzón, Sekundarstufe - Berufsausbildung<br/>Cyber-Volontär bei INCIBE"
+					"body_de": "2024<br/>Salesianos Monzón, Sekundarstufe - Berufsausbildung<br/>Cyber-Volontär bei INCIBE",
+					"gallery": [
+						{
+							"img": "images/volunteering/cybersecurity_talk_1.jpg",
+							"alt_en": "Cybersecurity Talks at High School I",
+							"alt_es": "Charlas de Ciberseguridad en Secundaria y FP I",
+							"alt_de": "Cybersicherheit Vorträge an der High School I",
+							"img_title_en": "Cybersecurity Talk at High School I",
+							"img_title_es": "Charla de Cybersecurity en Secundaria y FP I",
+							"img_title_de": "Cybersicherheit Vorträge an der High School I",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/volunteering/cybersecurity_talk_2.jpg",
+							"alt_en": "Cybersecurity Talks at High School II",
+							"alt_es": "Charlas de Ciberseguridad en Secundaria y FP II",
+							"alt_de": "Cybersicherheit Vorträge an der High School II",
+							"img_title_en": "Cybersecurity Talk at High School II",
+							"img_title_es": "Charla de Cybersecurity en Secundaria y FP II",
+							"img_title_de": "Cybersicherheit Vorträge an der High School II",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/volunteering/cybersecurity_talk_2.jpg",
+							"alt_en": "Cybersecurity Talks at High School III",
+							"alt_es": "Charlas de Ciberseguridad en Secundaria y FP III",
+							"alt_de": "Cybersicherheit Vorträge an der High School III",
+							"img_title_en": "Cybersecurity Talks at High School III",
+							"img_title_es": "Charla de Cybersecurity en Secundaria y FP III",
+							"img_title_de": "Cybersicherheit Vorträge an der High School III",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
 				},
 				{
 					"img": "images/companies/PVCV.jpg",
@@ -1645,7 +1721,93 @@
 					"meta_description_de": "Mario Varona - Mobile & Web Engineer • Big Data • Security",
 					"body_en": "November 2024<br/>Volunteer Platform of the Valencian Community<br/>Cleaning work carried out in two days (16 hours) in Catarroja and Alfafar",
 					"body_es": "Noviembre de 2024<br/>Plataforma del Voluntariat de la Comunitat Valenciana<br/>Trabajos de limpieza realizados en dos días (16 horas) en Catarroja y Alfafar",
-					"body_de": "November 2024<br/>Plattform des Freiwilligendienstes der Comunitat Valenciana<br/>Reinigungsarbeiten, die an zwei Tagen (16Stunden) in Catarroja und Alfafar durchgeführt wurden"
+					"body_de": "November 2024<br/>Plattform des Freiwilligendienstes der Comunitat Valenciana<br/>Reinigungsarbeiten, die an zwei Tagen (16Stunden) in Catarroja und Alfafar durchgeführt wurden",
+					"gallery": [
+						{
+							"img": "images/volunteering/dana_1.jpg",
+							"alt_en": "Help for municipalities affected by DANA I",
+							"alt_es": "Ayuda a municipios afectados por DANA I",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden I",
+							"img_title_en": "Help for municipalities affected by DANA I",
+							"img_title_es": "Ayuda a municipios afectados por DANA I",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden I",
+							"img_description_en": "Catarroja",
+							"img_description_es": "Catarroja",
+							"img_description_de": "Catarroja"
+						},
+						{
+							"img": "images/volunteering/dana_2.png",
+							"alt_en": "Help for municipalities affected by DANA II",
+							"alt_es": "Ayuda a municipios afectados por DANA II",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden II",
+							"img_title_en": "Help for municipalities affected by DANA II",
+							"img_title_es": "Ayuda a municipios afectados por DANA II",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden II",
+							"img_description_en": "Catarroja, La Sexta Noticias",
+							"img_description_es": "Catarroja, La Sexta Noticias",
+							"img_description_de": "Catarroja, La Sexta Noticias"
+						},
+						{
+							"img": "images/volunteering/dana_3.png",
+							"alt_en": "Help for municipalities affected by DANA III",
+							"alt_es": "Ayuda a municipios afectados por DANA III",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden III",
+							"img_title_en": "Help for municipalities affected by DANA III",
+							"img_title_es": "Ayuda a municipios afectados por DANA III",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden III",
+							"img_description_en": "Catarroja, Aragón TV",
+							"img_description_es": "Catarroja, Aragón TV",
+							"img_description_de": "Catarroja, Aragón TV"
+						},
+						{
+							"img": "images/volunteering/dana_4.jpg",
+							"alt_en": "Help for municipalities affected by DANA IV",
+							"alt_es": "Ayuda a municipios afectados por DANA IV",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden IV",
+							"img_title_en": "Help for municipalities affected by DANA IV",
+							"img_title_es": "Ayuda a municipios afectados por DANA IV",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden IV",
+							"img_description_en": "Catarroja",
+							"img_description_es": "Catarroja",
+							"img_description_de": "Catarroja"
+						},
+						{
+							"img": "images/volunteering/dana_5.png",
+							"alt_en": "Help for municipalities affected by DANA V",
+							"alt_es": "Ayuda a municipios afectados por DANA V",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden V",
+							"img_title_en": "Help for municipalities affected by DANA V",
+							"img_title_es": "Ayuda a municipios afectados por DANA V",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden V",
+							"img_description_en": "Alfafar, World Central Kitchen",
+							"img_description_es": "Alfafar, World Central Kitchen",
+							"img_description_de": "Alfafar, World Central Kitchen"
+						},
+						{
+							"img": "images/volunteering/dana_6.png",
+							"alt_en": "Help for municipalities affected by DANA VI",
+							"alt_es": "Ayuda a municipios afectados por DANA VI",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden VI",
+							"img_title_en": "Help for municipalities affected by DANA VI",
+							"img_title_es": "Ayuda a municipios afectados por DANA VI",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden VI",
+							"img_description_en": "Group of Volunteers - Day 1",
+							"img_description_es": "Grupo de Voluntarios - Día 1",
+							"img_description_de": "Gruppe von Freiwilligen - Tag 1"
+						},
+						{
+							"img": "images/volunteering/dana_7.png",
+							"alt_en": "Help for municipalities affected by DANA VII",
+							"alt_es": "Ayuda a municipios afectados por DANA VII",
+							"alt_de": "Hilfe für von DANA betroffene Gemeinden VII",
+							"img_title_en": "Help for municipalities affected by DANA VII",
+							"img_title_es": "Ayuda a municipios afectados por DANA VII",
+							"img_title_de": "Hilfe für von DANA betroffene Gemeinden VII",
+							"img_description_en": "Group of Volunteers - Day 2",
+							"img_description_es": "Grupo de Voluntarios - Día 2",
+							"img_description_de": "Gruppe von Freiwilligen - Tag 2"
+						}
+					]
 				},
 				{
 					"img": "images/classroom.png",
