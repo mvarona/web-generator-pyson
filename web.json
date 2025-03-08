@@ -1524,7 +1524,105 @@
 					"link1": "https://ibloodtests.com",
 					"text_link1_en": "Go to site",
 					"text_link1_es": "Ir al sitio",
-					"text_link1_de": "Gehe auf die Webseite"
+					"text_link1_de": "Gehe auf die Webseite",
+					"gallery": [
+						{
+							"img": "images/projects/ibloodtests_1.png",
+							"alt_en": "Home",
+							"alt_es": "Página principal",
+							"alt_de": "Startseite",
+							"img_title_en": "Home",
+							"img_title_es": "Principal",
+							"img_title_de": "Startseite",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_2.png",
+							"alt_en": "Features",
+							"alt_es": "Beneficios",
+							"alt_de": "Merkmale",
+							"img_title_en": "Features",
+							"img_title_es": "Beneficios",
+							"img_title_de": "Merkmale",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_3.png",
+							"alt_en": "Analysis",
+							"alt_es": "Análisis",
+							"alt_de": "Analyse",
+							"img_title_en": "Analysis",
+							"img_title_es": "Análisis",
+							"img_title_de": "Analyse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_4.png",
+							"alt_en": "Analysis",
+							"alt_es": "Análisis",
+							"alt_de": "Analyse",
+							"img_title_en": "Analysis",
+							"img_title_es": "Análisis",
+							"img_title_de": "Analyse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_5.png",
+							"alt_en": "Analysis",
+							"alt_es": "Análisis",
+							"alt_de": "Analyse",
+							"img_title_en": "Analysis",
+							"img_title_es": "Análisis",
+							"img_title_de": "Analyse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_6.png",
+							"alt_en": "Analysis",
+							"alt_es": "Análisis",
+							"alt_de": "Analyse",
+							"img_title_en": "Analysis",
+							"img_title_es": "Análisis",
+							"img_title_de": "Analyse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_7.png",
+							"alt_en": "Results",
+							"alt_es": "Resultados",
+							"alt_de": "Ergebnisse",
+							"img_title_en": "Results",
+							"img_title_es": "Resultados",
+							"img_title_de": "Ergebnisse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/projects/ibloodtests_8.png",
+							"alt_en": "Results",
+							"alt_es": "Resultados",
+							"alt_de": "Ergebnisse",
+							"img_title_en": "Results",
+							"img_title_es": "Resultados",
+							"img_title_de": "Ergebnisse",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}						
+					]
 				},
 				{
 					"img": "images/projects/visualbasic.png",
