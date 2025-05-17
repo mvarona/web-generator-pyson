@@ -1973,6 +1973,98 @@
 			"quote_author_de": "",
 			"subsections": [
 				{
+				  "img": "images/companies/alumni_usal.png",
+				  "alt_en": "Alumni University of Salamanca's Logo",
+				  "alt_es": "Logo de Alumni Universidad de Salamanca",
+				  "alt_de": "Alumni Universität Salamanca Logo",
+				  "title_en": "Magna Cum Laude Award at the I Cum Laude Awards for Young Talent, 2025",
+				  "title_es": "Premio Magna Cum Laude en los I Premios Cum Laude al Talento Joven, 2025",
+				  "title_de": "Magna-Cum-Laude-Preis - 1. Cum-Laude-Preisverleihung für junge Talente, 2025",
+				  "meta_title_en": "Magna Cum Laude Award 2025 - Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "meta_title_es": "Premio Magna Cum Laude 2025 - Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "meta_title_de": "Magna-Cum-Laude-Preis 2025 - Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "meta_description_en": "Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "meta_description_es": "Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "meta_description_de": "Mario Varona - Mobile & Web Development • Big Data • Cybersecurity",
+				  "body_en": "In recognition of academic and professional achievements, and social commitment. Organized by the University of Salamanca Alumni and the General Foundation of the University of Salamanca.",
+				  "body_es": "En reconocimiento a la trayectoria académica, profesional, y compromiso social. Organizados por Alumni Universidad de Salamanca, y Fundación General Universidad de Salamanca.",
+				  "body_de": "Auszeichnung für akademische Exzellenz, berufliche Laufbahn und gesellschaftliches Engagement. Veranstaltet von der Alumni-Vereinigung der Universität Salamanca und der Stiftung der Universität Salamanca.",
+				  "gallery": [
+						{
+							"img": "images/awards/cumlaude_1.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/awards/cumlaude_2.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/awards/cumlaude_3.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/awards/cumlaude_4.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/awards/cumlaude_5.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						},
+						{
+							"img": "images/awards/cumlaude_6.jpg",
+							"alt_en": "Cum Laude Awards for Young Talent",
+							"alt_es": "Premios Cum Laude al Talento Joven",
+							"alt_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_title_en": "Cum Laude Awards for Young Talent",
+							"img_title_es": "Premios Cum Laude al Talento Joven",
+							"img_title_de": "Cum-Laude-Preisverleihung für junge Talente",
+							"img_description_en": "",
+							"img_description_es": "",
+							"img_description_de": ""
+						}
+					]
+				},
+				{
 		          "img": "images/companies/ubu.png",
 		          "alt_en": "University of Burgos's Logo",
 		          "alt_es": "Logo de la Universidad de Burgos",
